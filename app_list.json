@@ -1,0 +1,186 @@
+{
+  "game": [
+    {
+      "Google Play Games": {
+        "appId": "com.google.android.play.games",
+        "name": "Google Play Games",
+        "icon": "https://play-lh.googleusercontent.com/wpRQkfqbkPztp1US6HDr8E41We8GyY-B4CG1PMmWI3WKDk9OeYh4ehXwKIfZB7dm-sc",
+        "developer": "Google LLC",
+        "genre": "Entertainment",
+        "score": 4.031387,
+        "installs": "5,000,000,000+",
+        "summary": "Play games instantly, save progress, and earn achievements.",
+        "description": "Games are more fun with the Google Play Games app. We'll help you find your next favorite game – from action to puzzles. And with \"Instant play,\" many games require no installation. Really. Save your progress and track your achievements as you level up. Plus, you can pick up where you left off from any device.\r\n\r\nKEY FEATURES\r\n• <b>Instant play:</b> There’s no installation needed – look for the \"Instant play\" button to instantly play full games.\r\n• <b>Built-in Google games:</b> Play Solitaire, Minesweeper, Snake, PAC-MAN, Cricket, and Whirlybird – even when you’re offline.\r\n• <b>Save your progress:</b> Your progress is automatically saved to the cloud when you see \"Progress saved by Play Games.\"\r\n• <b>Gamer profile:</b> Create a custom gamer ID, unlock achievements, earn XP, and level up.\r\n• <b>Gameplay recording:</b> Easily record and share your best gameplay moments.",
+        "updated": 1756911276,
+        "size": "",
+        "version": "Varies with device",
+        "android_version": "",
+        "url": "https://play.google.com/store/apps/details?id=com.google.android.play.games"
+      }
+    },
+    {
+      "Roblox": {
+        "appId": "com.roblox.client",
+        "name": "Roblox",
+        "icon": "https://play-lh.googleusercontent.com/7cIIPlWm4m7AGqVpEsIfyL-HW4cQla4ucXnfalMft1TMIYQIlf2vqgmthlZgbNAQoaQ",
+        "developer": "Roblox Corporation",
+        "genre": "Adventure",
+        "score": 4.4262104,
+        "installs": "1,000,000,000+",
+        "summary": "Your next adventure awaits.",
+        "description": "Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine. Join millions of people and discover an infinite variety of immersive experiences created by a global community!\r\n\r\nAlready have an account? Log in with your existing Roblox account and explore the infinite metaverse of Roblox.\r\n\r\nMILLIONS OF EXPERIENCES\r\n\r\nIn the mood for an epic adventure? Want to compete against rivals worldwide? Or do you just want to hang out and chat with your friends online? A growing library of experiences created by the community means there’s always something new and exciting for you every day.\r\n\r\nEXPLORE TOGETHER ANYTIME, ANYWHERE\r\n\r\nTake the fun on the go. Roblox features full cross-platform support, meaning you can join your friends and millions of other people on their computers, mobile devices, Xbox One, or VR headsets.\r\n\r\nBE ANYTHING YOU CAN IMAGINE\r\n\r\nBe creative and show off your unique style! Customize your avatar with tons of hats, shirts, faces, gear, and more. With an ever-expanding catalog of items, there’s no limit to the looks you can create.\r\n\r\nCHAT WITH PEOPLE YOU KNOW\r\n\r\nParty is a seamless way for up to six friends to group up and jump into an experience together. Join people you know and stay together as you move across experiences. 13+ users can also use Party to chat through voice or text. It's never been easier to coordinate and communicate on Roblox.\r\n\r\nCREATE YOUR OWN EXPERIENCES: https://www.roblox.com/develop\r\nSUPPORT: https://en.help.roblox.com/hc/en-us\r\nCONTACT: https://corp.roblox.com/contact/\r\nPRIVACY POLICY: https://www.roblox.com/info/privacy\r\nPARENT’S GUIDE: https://corp.roblox.com/parents/\r\nTERMS OF USE: https://en.help.roblox.com/hc/en-us/articles/115004647846\r\n\r\nPLEASE NOTE: A network connection is required to join. Roblox works best over Wi-Fi.",
+        "updated": 1757609035,
+        "size": "",
+        "version": "2.689.880",
+        "android_version": "",
+        "url": "https://play.google.com/store/apps/details?id=com.roblox.client"
+      }
+    },
+    {
+      "Subway Surfers": {
+        "appId": "com.kiloo.subwaysurf",
+        "name": "Subway Surfers",
+        "icon": "https://play-lh.googleusercontent.com/FVWs-cooG28tz3GuKSaBKW_Rp91wLJxGxlmB9et_r-chKrjWpvXGxtRJWQi0QKithdM",
+        "developer": "SYBO Games",
+        "genre": "Arcade",
+        "score": 4.5553255,
+        "installs": "1,000,000,000+",
+        "summary": "Help Jake, Tricky & Fresh escape from the grumpy Inspector and his dog!",
+        "description": "DASH as fast as you can! \r\nDODGE the oncoming trains! \r\n\r\nHelp Jake, Tricky & Fresh escape from the grumpy Guard and his dog. \r\n\r\n★ Grind trains with your cool crew! \r\n★ Colorful and vivid HD graphics! \r\n★ Hoverboard Surfing! \r\n★ Paint powered jetpack! \r\n★ Lightning fast swipe acrobatics! \r\n★ Challenge and help your friends! \r\n\r\nJoin the most daring chase! \r\n\r\nA Universal App with HD optimized graphics.\r\n\r\nOriginally co-developed by SYBO and Kiloo.",
+        "updated": 1757075670,
+        "size": "",
+        "version": "3.52.1",
+        "android_version": "",
+        "url": "https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf"
+      }
+    },
+    {
+      "Block Blast!": {
+        "appId": "com.block.juggle",
+        "name": "Block Blast!",
+        "icon": "https://play-lh.googleusercontent.com/R0qgNDYYHbRhw6JFsdEbDMqONplEvJx0m0W9wzYVvY3eNF1c2rfBWYjQxW0sLEzFe1E",
+        "developer": "HungryStudio",
+        "genre": "Puzzle",
+        "score": 4.8460793,
+        "installs": "500,000,000+",
+        "summary": "No WiFi? No worries! Play and relax anywhere, anytime.",
+        "description": "Enter the world of Block Blast, a fun and free block puzzle game where every move challenges your brain and strategy, rewarding you with satisfying crush effects as you blast cubes away. Whether you're seeking offline relaxation or looking to enhance your logic skills, Block Blast delivers an engaging puzzle experience.\r\n\r\n🌟 Why You'll Love Block Blast\r\n🔸 Vibrant Puzzle Adventure: Match colorful blocks on an 8x8 board, solve logic puzzles, and watch the cubes crush in a cascade of color.\r\n🔹 Strategic Combos & Streaks: \r\nUse your brain to clear multiple lines of blocks in one move for powerful combos. Maintain your streaks to achieve massive scores!\r\n🔸 Casual Yet Challenging: Play at your own pace, relax your brain, or apply deep logic strategies to beat your highest score.\r\n🔹 Offline Fun, No WiFi Needed: Enjoy free block puzzle game anytime and anywhere, perfect for endless fun on-the-go.\r\n\r\n💥 Features of Block Blast\r\n● Puzzle Gameplay: Strategically place blocks and cubes, match colors, and solve each challenging level.\r\n● Adventure Mode: Take on progressively challenging puzzles, each level with unique theme jigsaw and visual styles.\r\n● Daily Challenges: Keep your brain sharp with daily logic puzzles and earn exclusive achievements.\r\n● Optimized for All Devices: Smooth, seamless gameplay experience with minimal memory usage—perfect for phones and tablets.\r\n\r\n🎮 How to Play\r\n● Drag & Match: Strategically place cubes on the 8x8 board.\r\n● Crush & Score: Complete rows or columns to crush blocks away and earn points.\r\n● Chase Combos: Plan your moves and trigger massive combos for bonus points.\r\n● Stay Strategic: Apply logic and strategy to prevent your board from filling up.\r\n\r\n✨ Pro Tips for Puzzle Masters\r\n● Plan Ahead: Visualize your moves to keep the board open for larger cubes.\r\n● Maximize Combos: Match multiple rows and blocks simultaneously to boost your combos.\r\n● Master the Streak: Consistent clears will maintain your fun streaks and enhance your score rewards.\r\n\r\n🔥 Jump into the Free Block Puzzle Game!\r\nReady to test your brain, sharpen your logic, and enjoy hours of offline puzzle fun? Download Block Blast now and embark on an unforgettable block puzzle adventure.",
+        "updated": 1757742061,
+        "size": "",
+        "version": "8.0.5",
+        "android_version": "",
+        "url": "https://play.google.com/store/apps/details?id=com.block.juggle"
+      }
+    },
+    {
+      "Candy Crush Saga": {
+        "appId": "com.king.candycrushsaga",
+        "name": "Candy Crush Saga",
+        "icon": "https://play-lh.googleusercontent.com/TLUeelx8wcpEzf3hoqeLxPs3ai1tdGtAZTIFkNqy3gbDp1NPpNFTOzSFJDvZ9narFS0",
+        "developer": "King",
+        "genre": "Casual",
+        "score": 4.619665,
+        "installs": "1,000,000,000+",
+        "summary": "Match your way through candy puzzles packed with fun and clever challenges!",
+        "description": "Explore a world full of delicious match-3 puzzles and endless fun! Blast through thousands of challenging levels in this timeless puzzle game from King. Match candies, conquer jelly, toffees, and jam, and uncover sweet surprises in every puzzle.\r\n\r\nClassic Match-3 Gameplay with Fresh Twists\r\n\r\n- Discover unique game modes like Gummy Dragons and Bubblegum Pop. \r\n- Match and blast your way through matching levels full of sugar-coated fun.\r\n- Master tricky puzzles and create explosive combos to clear the board!\r\n\r\nBrain-Boosting Challenges & Special Events\r\n\r\n- Daily Rewards: Log in every day to claim free boosters and extra lives.\r\n- Time-Limited Events: Compete in themed challenges and win exclusive prizes.\r\n- Tournaments & Leaderboards: Crush more candies than your friends and rise to the top to become the ultimate match-3 master!\r\n\r\nBonbon Blitz Your Way Through Extra Sticky Levels\r\n\r\n- Use powerful boosters like Bonbon Blitz, Lollipop Hammer, and Jelly Fish to solve puzzles and boost your score.\r\n- Stuck on a level? Boosters and extra moves will help you blast through any obstacle.\r\n\r\nPlay Offline or Online, Anytime and Anywhere\r\n\r\n- No internet, no problem: Enjoy offline gameplay and keep the fun going wherever you are.\r\n- Ad-free fun means uninterrupted candy-matching bliss!\r\n\r\nConnect with Friends & Join the Candy Kingdom\r\n\r\n- Share lives, compare scores, and see who’s the match-3 master in your friends circle.\r\n- Connect your game to Facebook to sync progress, compete with friends, and unlock exclusive rewards!\r\n\r\nDiscover more from King\r\n\r\nLooking for more brain-teasing fun? Try Candy Crush Soda Saga or Farm Heroes Saga for fresh twists on classic match-3 puzzles. Or dive into sweet solitaire action with the new Candy Crush Solitaire!\r\n\r\nCandy Crush Saga is free to play, but optional in-game items require payment. You can turn off the payment feature in your device’s settings.",
+        "updated": 1757348684,
+        "size": "",
+        "version": "1.311.1.1",
+        "android_version": "",
+        "url": "https://play.google.com/store/apps/details?id=com.king.candycrushsaga"
+      }
+    }
+  ],
+  "free": [
+    {
+      "Free Fire x NARUTO SHIPPUDEN": {
+        "appId": "com.dts.freefireth",
+        "name": "Free Fire x NARUTO SHIPPUDEN",
+        "icon": "https://play-lh.googleusercontent.com/jHnf_3-yMox_Tub_oLKQ7OuOi8Iahf1f4rdu-etZ2hmzUOekY84znct-c8hksxhD15PYNk4dMH2ZdVY3uxm7Gw",
+        "developer": "Garena International I",
+        "genre": "Action",
+        "score": 4.245672,
+        "installs": "1,000,000,000+",
+        "summary": "10-minute Survival Shooter!",
+        "description": "The Free Fire x NARUTO SHIPPUDEN Collaboration Chapter 2 is now live!\r\n\r\nThe Akatsuki have launched a surprise attack on the Hidden Leaf Village! Join forces with the Hidden Leaf ninjas to repel the invasion and protect your ninja world!\r\n\r\n[Tsukuyomi]\r\nAll maps are affected by Tsukuyomi. Enter the affected zones to discover hidden ninjutsu and ninja tools, uncovering more secrets of the ninja world!\r\n\r\n[Akatsuki Keepsake]\r\nNew Akatsuki keepsakes have arrived! Each keepsake holds iconic combat abilities from the original story, letting you relive thrilling battles and experience authentic ninja powers!\r\n\r\n[Hidden Leaf Village in Ruins]\r\nThe Hidden Leaf Village is under a fierce Akatsuki assault! Pain Tendo looms high above, unleashing the devastating Planetary Devastation. The Hidden Leaf ninjas need your help! Grab your weapons, join the fight, and save the village!\r\n\r\nFree Fire is a world-famous survival shooter game available on mobile. Each 10-minute game places you on a remote island where you are pit against 49 other players, all seeking survival. Players freely choose their starting point with their parachute, and aim to stay in the safe zone for as long as possible. Drive vehicles to explore the vast map, hide in the wild, or become invisible by proning under grass or rifts. Ambush, snipe, survive, there is only one goal: to survive and answer the call of duty.\r\n\r\nFree Fire, Battle In Style!\r\n\r\n[Survival shooter in its original form]\r\nSearch for weapons, stay in the play zone, loot your enemies and become the last man standing. Along the way, go for legendary airdrops while avoiding airstrikes to gain that little edge against other players.\r\n\r\n[10 minutes, 50 players, epic survival goodness awaits]\r\nFast and Lite gameplay - Within 10 minutes, a new survivor will emerge. Will you go beyond the call of duty and be the one under the shining lite?\r\n\r\n[4-man squad, with in-game voice chat]\r\nCreate squads of up to 4 players and establish communication with your squad at the very first moment. Answer the call of duty and lead your friends to victory and be the last team standing at the apex.\r\n\r\n[Clash Squad]\r\nA fast paced 4v4 game mode! Manage your economy, purchase weapons, and defeat the enemy squad!\r\n\r\n[Realistic and smooth graphics]\r\nEasy to use controls and smooth graphics promises the optimum survival experience you will find on mobile to help you immortalize your name among the legends. \r\n\r\n[Contact us]\r\nCustomer Service: https://ffsupport.garena.com/hc/en-us",
+        "updated": 1753340945,
+        "size": "",
+        "version": "1.114.1",
+        "android_version": "",
+        "url": "https://play.google.com/store/apps/details?id=com.dts.freefireth"
+      }
+    },
+    {
+      "Roblox": {
+        "appId": "com.roblox.client",
+        "name": "Roblox",
+        "icon": "https://play-lh.googleusercontent.com/7cIIPlWm4m7AGqVpEsIfyL-HW4cQla4ucXnfalMft1TMIYQIlf2vqgmthlZgbNAQoaQ",
+        "developer": "Roblox Corporation",
+        "genre": "Adventure",
+        "score": 4.4262104,
+        "installs": "1,000,000,000+",
+        "summary": "Your next adventure awaits.",
+        "description": "Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine. Join millions of people and discover an infinite variety of immersive experiences created by a global community!\r\n\r\nAlready have an account? Log in with your existing Roblox account and explore the infinite metaverse of Roblox.\r\n\r\nMILLIONS OF EXPERIENCES\r\n\r\nIn the mood for an epic adventure? Want to compete against rivals worldwide? Or do you just want to hang out and chat with your friends online? A growing library of experiences created by the community means there’s always something new and exciting for you every day.\r\n\r\nEXPLORE TOGETHER ANYTIME, ANYWHERE\r\n\r\nTake the fun on the go. Roblox features full cross-platform support, meaning you can join your friends and millions of other people on their computers, mobile devices, Xbox One, or VR headsets.\r\n\r\nBE ANYTHING YOU CAN IMAGINE\r\n\r\nBe creative and show off your unique style! Customize your avatar with tons of hats, shirts, faces, gear, and more. With an ever-expanding catalog of items, there’s no limit to the looks you can create.\r\n\r\nCHAT WITH PEOPLE YOU KNOW\r\n\r\nParty is a seamless way for up to six friends to group up and jump into an experience together. Join people you know and stay together as you move across experiences. 13+ users can also use Party to chat through voice or text. It's never been easier to coordinate and communicate on Roblox.\r\n\r\nCREATE YOUR OWN EXPERIENCES: https://www.roblox.com/develop\r\nSUPPORT: https://en.help.roblox.com/hc/en-us\r\nCONTACT: https://corp.roblox.com/contact/\r\nPRIVACY POLICY: https://www.roblox.com/info/privacy\r\nPARENT’S GUIDE: https://corp.roblox.com/parents/\r\nTERMS OF USE: https://en.help.roblox.com/hc/en-us/articles/115004647846\r\n\r\nPLEASE NOTE: A network connection is required to join. Roblox works best over Wi-Fi.",
+        "updated": 1757609035,
+        "size": "",
+        "version": "2.689.880",
+        "android_version": "",
+        "url": "https://play.google.com/store/apps/details?id=com.roblox.client"
+      }
+    },
+    {
+      "Free Fire MAX x NARUTO": {
+        "appId": "com.dts.freefiremax",
+        "name": "Free Fire MAX x NARUTO",
+        "icon": "https://play-lh.googleusercontent.com/8DpGXMVFd5vSb47uMMwjXpMHCYNnBPblPBghEoXBrnuf4DLxA7_qfp-rxV7Rsh5hjQZcmlX4jy-SKu3geOmg7A",
+        "developer": "Garena International I",
+        "genre": "Action",
+        "score": 4.433967,
+        "installs": "500,000,000+",
+        "summary": "MAX Battle Royale Experience",
+        "description": "The Free Fire x NARUTO SHIPPUDEN Collaboration Chapter 2 is now live!\r\n\r\nThe Akatsuki have launched a surprise attack on the Hidden Leaf Village! Join forces with the Hidden Leaf ninjas to repel the invasion and protect your ninja world!\r\n\r\n[Tsukuyomi]\r\nAll maps are affected by Tsukuyomi. Enter the affected zones to discover hidden ninjutsu and ninja tools, uncovering more secrets of the ninja world!\r\n\r\n[Akatsuki Keepsake]\r\nNew Akatsuki keepsakes have arrived! Each keepsake holds iconic combat abilities from the original story, letting you relive thrilling battles and experience authentic ninja powers!\r\n\r\n[The Shaken Hidden Leaf Village]\r\nThe Hidden Leaf Village is under a fierce Akatsuki assault! Pain Tendo looms high above, unleashing the devastating Planetary Devastation. The Hidden Leaf ninjas need your help! Grab your weapons, join the fight, and save the village!\r\n\r\nFree Fire MAX is designed exclusively to deliver premium gameplay experience in a Battle Royale. Enjoy a variety of exciting game modes with all Free Fire players via exclusive Firelink technology. Experience combat like never before with Ultra HD resolutions and breathtaking effects. Ambush, snipe, and survive; There is only one goal: to survive and be the last one standing.\r\n\r\nFree Fire, Battle In Style!\r\n\r\n[Fast-paced, deeply immersive gameplay]\r\n50 players parachute onto a deserted island but only one will leave. Over ten minutes, players will compete for weapons and supplies and take down any survivors that stand in their way. Hide, scavenge, fight and survive - with reworked and upgraded graphics, players will be richly immersed in the Battle Royale world from start to finish. \r\n\r\n[Same game, better experience]\r\nWith HD graphics, enhanced special effects and smoother gameplay, Free Fire MAX provides a realistic and immersive survival experience for all Battle Royale fans.\r\n\r\n[4-man squad, with in-game voice chat]\r\nCreate squads of up to 4 players and establish communication with your squad right from the start. Lead your friends to victory and be the last team standing victorious at the apex!\r\n\r\n[Firelink technology]\r\nWith Firelink, you can login your existing Free Fire account to play Free Fire MAX without any hassle. Your progress and items are maintained across both applications in real-time. You can play all game modes with both Free Fire and Free Fire MAX  players together, no matter which application they use.\r\n\r\nPrivacy Policy: https://sso.garena.com/html/pp_en.html\r\nTerms of Service:  https://sso.garena.com/html/tos_en.html\r\n\r\n[Contact us]\r\nCustomer Service: https://ffsupport.garena.com/hc/en-us",
+        "updated": 1753367910,
+        "size": "",
+        "version": "2.114.1",
+        "android_version": "",
+        "url": "https://play.google.com/store/apps/details?id=com.dts.freefiremax"
+      }
+    },
+    {
+      "Instagram": {
+        "appId": "com.instagram.android",
+        "name": "Instagram",
+        "icon": "https://play-lh.googleusercontent.com/VRMWkE5p3CkWhJs6nv-9ZsLAs1QOg5ob1_3qg-rckwYW7yp1fMrYZqnEFpk0IoVP4LM",
+        "developer": "Instagram",
+        "genre": "Social",
+        "score": 3.943279,
+        "installs": "5,000,000,000+",
+        "summary": "Create & share photos, stories, & reels with friends you love",
+        "description": "Little moments lead to big friendships. Share yours on Instagram. \r\n—From Meta\r\n\r\nConnect with friends, find other fans, and see what people around you are up to and into. Explore your interests and post what's going on, from your daily moments to life's highlights.\r\n\r\nShare what you’re up to and into on Insta®.\r\n- Keep up with friends on the fly with Stories and Notes that disappear after 24 hours.\r\n- Start group chats and share unfiltered moments with your Close Friends.\r\n- Share memories from recent events or trips in Feed.\r\n- Turn your life into a movie and discover short, entertaining videos on Instagram with Reels.\r\n- Customize your posts with exclusive templates, music, stickers and filters.\r\n\r\nDive into your interests.\r\n- Watch videos from your favorite Creators and discover new content that’s personalized to your interests.\r\n- Get inspired by photos and videos from new accounts in Explore.\r\n- Discover brands and small businesses, and shop products that are relevant to your personal style.\r\n\r\nSome Instagram features may not be available in your country or region.\r\n\r\nTerms and Policies - https://help.instagram.com/581066165581870\r\n\r\nConsumer Health Privacy Policy: https://privacycenter.instagram.com/policies/health\r\n\r\nLearn how we're working to help keep our communities safe across Meta technologies at the Instagram Safety Center: https://about.instagram.com/safety",
+        "updated": 1757695783,
+        "size": "",
+        "version": "Varies with device",
+        "android_version": "",
+        "url": "https://play.google.com/store/apps/details?id=com.instagram.android"
+      }
+    },
+    {
+      "ChatGPT": {
+        "appId": "com.openai.chatgpt",
+        "name": "ChatGPT",
+        "icon": "https://play-lh.googleusercontent.com/lmG9HlI0awHie0cyBieWXeNjpyXvHPwDBb8MNOVIyp0P8VEh95AiBHtUZSDVR3HLe3A",
+        "developer": "OpenAI",
+        "genre": "Productivity",
+        "score": 4.7595677,
+        "installs": "500,000,000+",
+        "summary": "The official app by OpenAI",
+        "description": "Introducing ChatGPT for Android: OpenAI’s latest advancements at your fingertips.\r\n\r\nThis official app is free, syncs your history across devices, and brings you the latest from OpenAI, including the new image generator.\r\n\r\nWith ChatGPT in your pocket, you’ll find:\r\n\r\n· Image generation–Generate original images from a description, or transform existing ones with a few simple words. \r\n· Advanced Voice Mode–Tap the soundwave icon to have a real-time convo on the go. Settle a dinner table debate, or practice a new language. \r\n· Photo upload—Snap or upload a picture to transcribe a handwritten recipe or get info about a landmark. \r\n· Creative inspiration—Find custom birthday gift ideas or create a personalized greeting card.\r\n· Tailored advice—Talk through a tough situation, ask for a detailed travel itinerary, or get help crafting the perfect response. \r\n· Personalized learning—Explain electricity to a dinosaur-loving kid or easily brush up yourself on a historic event.\r\n· Professional input—Brainstorm marketing copy or map out a business plan.\r\n· Instant answers—Get recipe suggestions when you only have a few ingredients.\r\n\r\nJoin hundreds of millions of users and try the app captivating the world. Download ChatGPT today.\r\n\r\nTerms of service & privacy policy:\r\nhttps://openai.com/policies/terms-of-use\r\nhttps://openai.com/policies/privacy-policy",
+        "updated": 1757187497,
+        "size": "",
+        "version": "1.2025.245",
+        "android_version": "",
+        "url": "https://play.google.com/store/apps/details?id=com.openai.chatgpt"
+      }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+.pageinationBox {
+    display: block;
+    width: 100%;
+    margin: 16px 0;
+}
+
+.pageinationBox .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.pageinationBox .pagination .page-li {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    user-select: none;
+    display: flex;
+    padding: 0;
+    margin: 0 4px;
+}
+
+.pageinationBox .pagination .page-link {
+    flex: 1;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #666666;
+}
+
+.pageinationBox .pagination .page-active .page-link {
+    color: #FFFFFF;
+}
+
+.pageinationBox .pagination .page-li.disabled {
+    opacity: 0.5;
+    color: #6c757d;
+    pointer-events: none;
+}
+
+.pageinationBox .pagination .page-li .number-ellipsis {
+    border: none;
+    cursor: default;
+}
+
+.pageinationBox .pagination .page-li .number-ellipsis:hover {
+    background-color: #fff;
+}
+
+.pageinationBox .pagination .page-li.page-active {
+    cursor: default;
+    color: #fff;
+    border-radius: 2px;
+    background-color: #1B65FA;
+}
+
+.pageinationBox .pagination .page-li:hover {
+    cursor: pointer;
+}
+
+.pageinationBox .pagination .page-number {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+}
+
+.pageinationBox .pagination .page-prev {
+    border-radius: 2px;
+    border: 1px solid #D9D9D9;
+    background-color: #FFFFFF;
+}
+
+.pageinationBox .pagination .page-prev .no-prev {
+    color: #666666;
+}
+
+.pageinationBox .pagination .page-prev:hover {
+    cursor: default;
+    background: #EDEDED;
+}
+
+.pageinationBox .pagination .page-next {
+    border-radius: 2px;
+    border: 1px solid #D9D9D9;
+}
+
+.pageinationBox .pagination .page-next:hover {
+    cursor: default;
+    background: #EDEDED;
+}
+
+.pageinationBox .pagination .number-ellipsis .page-hidden {
+    display: none;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .pageinationBox .pagination .page-li {
+        width: 30px;
+        height: 30px;
+        margin: 0 2px;
+    }
+}
