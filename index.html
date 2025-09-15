@@ -524,12 +524,12 @@
                     </h1>
                     <ul class="topList">
 	                    <li class="topItem">
-		                    <a class="item" href="/">
+		                    <a class="item" href="index.html">
 			                    <p class="topTitle topicsTitle">Home </p>
 		                    </a>
 	                    </li>
                         <li class="topItem">
-                            <a class="item" href="top-chart.html">
+                            <a class="item" href="top_chart.html">
                                 <p class="topTitle appsTitle">Top Charts</p>
                             </a>
                         </li>
@@ -545,9 +545,8 @@
                 <div class="topR">
                     <div class="search">
                         <input class="searchInput" type="text" placeholder="Search any APK" class="header-searchtext"
-                               onkeydown="enterSearch('.searchInput')"
-                               data-cf-modified-5016e61e6824172b9ab9768d-="">
-                        <div class="clearResp">
+                               v-model="search">
+                        <div class="clearResp" >
                             <svg t="1680593535408" class="icon" viewBox="0 0 1024 1024" version="1.1"
                                  xmlns="http://www.w3.org/2000/svg" p-id="8686" id="mx_n_1680593535409" width="13.33"
                                  height="13.33">
@@ -555,11 +554,9 @@
                                       fill="#626365" p-id="8687"></path>
                             </svg>
                         </div>
-                        <button class="searchIcon" type="submit"
-                                onclick="jumpSearch('.searchInput')"
-                                aria-label="searchBtn" data-cf-modified-5016e61e6824172b9ab9768d-="">
+                        <button class="searchIcon" type="submit"  aria-label="searchBtn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20"
-                                 fill="none">
+                                 fill="none" @click="searchWord">
                                 <circle cx="9.1447" cy="9.03924" r="7.6408" stroke="#666666" stroke-width="2"/>
                                 <path d="M15.0742 13.8203L20.4977 19.2435" stroke="#666666" stroke-width="2"/>
                             </svg>
@@ -611,7 +608,7 @@
                         <div class="mSearch">
                             <input class="searchInput" type="text" placeholder="Search any APK"
                                    class="header-searchtext"
-                                   onkeydown="enterSearch('.searchInput')"
+
                                    data-cf-modified-5016e61e6824172b9ab9768d-="">
                             <div class="clearResp">
                                 <svg t="1680593535408" class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -622,7 +619,7 @@
                                 </svg>
                             </div>
                             <div class="searchIcon"
-                                 onclick="jumpSearch('.searchInput')"
+
                                  data-cf-modified-5016e61e6824172b9ab9768d-="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
                                      fill="none">
@@ -674,7 +671,7 @@
                         </a>
                     </li>
                     <li class="sideItem">
-                        <a href="top-chart.html?charts=app">
+                        <a href="top_chart.html?charts=app1">
                             <svg class="icon">
                                 <use xlink:href="#icon-Charts"></use>
                             </svg>
@@ -705,25 +702,6 @@
 
     <div class="wrap">
         <div class="indexWrap">
-            <div class="categoriesModule">
-                <div class="appsModuleTitle">
-                    <h2 class="apptitle">Hot Categories</h2>
-                    <a class="more" href="category.html" aria-label="more">
-                        <svg class="icon">
-                            <use xlink:href="#icon-more"></use>
-                        </svg>
-                    </a>
-                </div>
-                <ul class="CategoryList" v-if="jsonData">
-                    <li class="itemCate" v-for="item in jsonData.HOT.slice(0, 5)" :key="Object.keys(item)[0]">
-                        <a class="coverlink" href="category/news-and-magazines.html" aria-label="more"></a>
-                        <img class="itemCateImg lazyImg" :src="Object.values(item)[0].icon"
-                             alt="News & Magazines">
-                        <div class="itemCateName">{{Object.values(item)[0].name}}</div>
-                    </li>
-                </ul>
-            </div>
-           
             <div class="ad-box ads-1" style="height: auto !important;">
                 <p class="adTitle">广告位</p>
 <!--                <p class="adTitle">ADVERTISEMENT</p>-->
@@ -739,15 +717,15 @@
             <div class="topFreeModule">
                 <div class="appsModuleTitle">
                     <h2 class="apptitle">Top Free Apps</h2>
-                    <a class="more" href="top-chart.html?charts=app" aria-label="more">
+                    <a class="more" href="top_chart.html?charts=app1" aria-label="more">
                         <svg class="icon">
                             <use xlink:href="#icon-more"></use>
                         </svg>
                     </a>
                 </div>
                 <ul class="topAppList" v-if="jsonData">
-                    <li class="itemAppCont"  v-for="item in jsonData.TOP_FREE.slice(0, 18)" :key="Object.keys(item)[0]">
-                        <a class="coverlink" href="app013d.html?app=com.geico.mobile" aria-label="more"></a>
+                    <li class="itemAppCont"  v-for="item in jsonData.TOP_FREE_APPS.slice(0, 18)" :key="Object.keys(item)[0]">
+                        <a class="coverlink" :href="'app_detail.html?search='+Object.values(item)[0].appId" aria-label="more"></a>
                         <img class="ItemAppLogo lazyImg"  :src="Object.values(item)[0].icon"
          :alt="Object.values(item)[0].name"
                          >
@@ -764,25 +742,23 @@
                     </li>
                 </ul>
             </div>
-
-
             <div class="topFreeModule">
                 <div class="appsModuleTitle">
-                    <h2 class="apptitle">NEW Games</h2>
-                    <a class="more" href="top-chart028a.html?charts=game" aria-label="more">
+                    <h2 class="apptitle">Top Free Games</h2>
+                    <a class="more" href="top_chart.html?charts=app2" aria-label="more">
                         <svg class="icon">
                             <use xlink:href="#icon-more"></use>
                         </svg>
                     </a>
                 </div>
                 <ul class="topAppList" v-if="jsonData">
-                    <li class="itemAppCont"  v-for="item in jsonData.NEW_FREE.slice(0, 5)" 
+                    <li class="itemAppCont"  v-for="item in jsonData.TOP_FREE_GAMES.slice(0, 20)"
       :key="Object.keys(item)[0]">
-                        <a class="coverlink" href="app971d.html?app=com.draw.to.pee.bo" aria-label="more"></a>
+                        <a class="coverlink" :href="'app_detail.html?search='+Object.values(item)[0].appId" aria-label="more"></a>
                         <img class="ItemAppLogo lazyImg" :src="Object.values(item)[0].icon"
          :alt="Object.values(item)[0].name">
                         <div class="itemAppDesc">
-                            <p class="itemAppName">Toilet Rush Race: Draw Puzzle</p>
+                            <p class="itemAppName">{{Object.values(item)[0].name}}</p>
                             <p class="itemAppCate">Puzzle</p>
                             <div class="itemAppStart">
                                 <span>4.0</span>
@@ -792,15 +768,12 @@
                             </div>
                         </div>
                     </li>
-                   
+
                 </ul>
             </div>
-
-
- 
             <div class="hotAppModule">
                 <div class="appsModuleTitle">
-                    <h2 class="apptitle">TOP GROSSING</h2>
+                    <h2 class="apptitle">Hot Social Apps</h2>
                     <a class="more" href="category/social.html" aria-label="more">
                         <svg class="icon">
                             <use xlink:href="#icon-more"></use>
@@ -808,10 +781,10 @@
                     </a>
                 </div>
                 <ul class="hotAppList" v-if="jsonData">
-                    <li class="itemHotAppCont" v-for="item in jsonData.TOP_GROSSING.slice(0, 5)" 
+                    <li class="itemHotAppCont" v-for="item in jsonData.HOT_SOCIAL_APPS.slice(0,20)"
       :key="Object.keys(item)[0]">
-                        <a class="coverlink" href="appd95a.html?app=com.facebook.katana" aria-label="more"></a>
-                        <img class="itemHotContLogo lazyImg" 
+                        <a class="coverlink" :href="'app_detail.html?search='+Object.values(item)[0].appId" aria-label="more"></a>
+                        <img class="itemHotContLogo lazyImg"
                              :src="Object.values(item)[0].icon"
          :alt="Object.values(item)[0].name">
                         <div class="itemHotContInfo">
@@ -824,10 +797,10 @@
                             </div>
                         </div>
                     </li>
-               
+
                 </ul>
             </div>
-            <div class="hotAppModule">
+            <div class="hotAppModule" v-if="jsonData">
                 <div class="appsModuleTitle">
                     <h2 class="apptitle">Hot Shopping Apps</h2>
                     <a class="more" href="category/shopping.html" aria-label="more">
@@ -837,135 +810,15 @@
                     </a>
                 </div>
                 <ul class="hotAppList">
-                    <li class="itemHotAppCont">
-                        <a class="coverlink" href="app98f3.html?app=com.zzkko" aria-label="more"></a>
-                        <img class="itemHotContLogo lazyImg" src="image/loading.webp" data-src="app_logo/com.zzkko.webp"
-                             alt="logo">
+                    <li class="itemHotAppCont" v-for="item in jsonData.HOT_SHOPPING_APPS.slice(0, 20)"
+                        :key="Object.keys(item)[0]">
+                        <a class="coverlink" :href="'app_detail.html?search='+Object.values(item)[0].appId" aria-label="more"></a>
+                        <img class="itemHotContLogo lazyImg"  :src="Object.values(item)[0].icon"
+                             :alt="Object.values(item)[0].name">
                         <div class="itemHotContInfo">
-                            <p class="itemHotContInfoTitle">SHEIN-Shopping Online</p>
+                            <p class="itemHotContInfoTitle">{{Object.values(item)[0].name}}</p>
                             <div class="itemHotContInfoDesc">
                                 <span>4.5</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemHotAppCont">
-                        <a class="coverlink" href="app1a0c.html?app=com.amazon.mShop.android.shopping"
-                           aria-label="more"></a>
-                        <img class="itemHotContLogo lazyImg" src="image/loading.webp"
-                             data-src="upload-logo/amazon-shopping.webp"
-                             alt="logo">
-                        <div class="itemHotContInfo">
-                            <p class="itemHotContInfoTitle">Amazon Shopping</p>
-                            <div class="itemHotContInfoDesc">
-                                <span>4.2</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemHotAppCont">
-                        <a class="coverlink" href="app7225.html?app=com.walmart.android" aria-label="more"></a>
-                        <img class="itemHotContLogo lazyImg" src="image/loading.webp" data-src="app_logo/walmart.webp"
-                             alt="logo">
-                        <div class="itemHotContInfo">
-                            <p class="itemHotContInfoTitle">Walmart: Shopping & Savings</p>
-                            <div class="itemHotContInfoDesc">
-                                <span>4.7</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemHotAppCont">
-                        <a class="coverlink" href="app0577.html?app=com.alibaba.aliexpresshd" aria-label="more"></a>
-                        <img class="itemHotContLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/aliexpress-shopping-app.webp"
-                             alt="logo">
-                        <div class="itemHotContInfo">
-                            <p class="itemHotContInfoTitle">AliExpress</p>
-                            <div class="itemHotContInfoDesc">
-                                <span>4.5</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemHotAppCont">
-                        <a class="coverlink" href="appb6eb.html?app=com.alibaba.intl.android.apps.poseidon"
-                           aria-label="more"></a>
-                        <img class="itemHotContLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.alibaba.intl.android.apps.poseidon.webp"
-                             alt="logo">
-                        <div class="itemHotContInfo">
-                            <p class="itemHotContInfoTitle">Alibaba.com - B2B marketplace</p>
-                            <div class="itemHotContInfoDesc">
-                                <span>4.5</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemHotAppCont">
-                        <a class="coverlink" href="app1d91.html?app=com.thehomedepot" aria-label="more"></a>
-                        <img class="itemHotContLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.thehomedepot.webp"
-                             alt="logo">
-                        <div class="itemHotContInfo">
-                            <p class="itemHotContInfoTitle">The Home Depot</p>
-                            <div class="itemHotContInfoDesc">
-                                <span>4.7</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemHotAppCont">
-                        <a class="coverlink" href="app4601.html?app=com.lowes.android" aria-label="more"></a>
-                        <img class="itemHotContLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.lowes.android.webp"
-                             alt="logo">
-                        <div class="itemHotContInfo">
-                            <p class="itemHotContInfoTitle">Lowe's</p>
-                            <div class="itemHotContInfoDesc">
-                                <span>4.6</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemHotAppCont">
-                        <a class="coverlink" href="app1266.html?app=com.shopify.arrive" aria-label="more"></a>
-                        <img class="itemHotContLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.shopify.arrive.webp"
-                             alt="logo">
-                        <div class="itemHotContInfo">
-                            <p class="itemHotContInfoTitle">The most rewarding way to Shop</p>
-                            <div class="itemHotContInfoDesc">
-                                <span>4.7</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemHotAppCont">
-                        <a class="coverlink" href="app23ee.html?app=com.nike.omega" aria-label="more"></a>
-                        <img class="itemHotContLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.nike.omega.webp"
-                             alt="logo">
-                        <div class="itemHotContInfo">
-                            <p class="itemHotContInfoTitle">Nike: Shoes, Apparel & Stories</p>
-                            <div class="itemHotContInfoDesc">
-                                <span>4.6</span>
                                 <svg width="12" height="12">
                                     <use xlink:href="#icon-start"></use>
                                 </svg>
@@ -976,38 +829,22 @@
             </div>
         </div>
     </div>
-    <div class="footerWrap" style="background-color: #F9FBFB;">
-        <div class="footer">
-            <div class="top">
-                <a class="logo" rel="home" title="Best App News &amp; Free APK Download" href="index.html">
-                    <img src="logo/home-logo.png" alt="logo">
-                </a>
-            </div>
-            <div class="tabbar" >
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact Us</a>
-                <a href="guidance.html">Guidance</a>
-                <a href="disclaimer.html">Disclaimer</a>
-                <a href="dmca.html">DMCA</a>
-                <a href="privacy-policy.html">Privacy Policy</a>
-                <a href="rules.html">Terms of Service</a>
-            </div>
-        </div>
-        <div class="cookie-notice-container" style="display: block;position: fixed;bottom: 0;left: 0;">
-            <div class="container">
-                We use cookies to improve your experience on our website. By using this site you agree to our use of
-                cookies.
-                <a class="moreJump" href="privacy-policy.html" title="privacyPolicy">Privacy Policy</a>
-                <button class="agree-cookies" onclick="addCookie()">Agree</button>
-            </div>
-        </div>
-    </div>
+
 </div>
 <style type="text/css">
     .footer .top {
         margin-bottom: 20px;
     }
 </style>
-</body>
 <script src="common.js" ></script>
+<script>
+    // 加载 footer.html 内容
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(html => {
+           // document.getElementById('index').innerHTML = html;
+        });
+
+</script>
+</body>
 </html>

@@ -1,11 +1,29 @@
 new Vue({
 	el: '#index',
 	data: {
-		jsonData: null
+		jsonData: null,
+		search:'',
+		searchResult:null,
+		type:'',
+		typeResult:null,
+		topCheck:'TOP_FREE_APPS',
+		topResult:null,
+	},
+	watch: {
+		jsonData: {
+			handler(newVal) {
+				if (newVal && Object.keys(newVal).length > 0) {
+					// 1️⃣ 触发 URL 搜索
+					this.trySearchFromUrl();
+					this.topResult = this.jsonData.TOP_FREE_APPS;
+				}
+			},
+			immediate: true,
+			deep: true
+		}
 	},
 	mounted() {
 		this.getJson();
-		this.getPage("TOP_FREE")
 	},
 	methods: {
 		getJson() {
@@ -17,14 +35,69 @@ new Vue({
 				})
 				.then(data => {
 					this.jsonData = data;
-					console.log(this.jsonData)
 				})
 				.catch(err => {
-					console.error("加载远程 JSON 失败:", err);
 					alert("加载远程 JSON 失败，请检查 URL 或网络。");
 				});
 		},
-		getPage(val) {
+		trySearchFromUrl() {
+			const searchAppId = new URLSearchParams(window.location.search).get('search');
+			if (searchAppId && Object.keys(this.jsonData).length > 0) {
+				this.search = searchAppId;
+				this.searchResult = this.searchAppById(searchAppId);
+				console.log('Search result:', this.searchResult);
+			}
+			const type = new URLSearchParams(window.location.search).get('type');
+			if (type && Object.keys(this.jsonData).length > 0) {
+				this.type = type.charAt(0).toUpperCase() + type.slice(1);
+				this.typeResult = this.jsonData[type];
+				console.log('Type result:', this.typeResult);
+			}
+			const like = new URLSearchParams(window.location.search).get('like');
+			if (like && Object.keys(this.jsonData).length > 0) {
+				this.search = like;
+				this.searchResult = this.searchAppsByName(like);
+				console.log('like result:', this.searchResult);
+			}
+		},
+		searchAppById(appId) {
+			for (const categoryKey in this.jsonData) {
+				const appsArray = this.jsonData[categoryKey];
+				if (!Array.isArray(appsArray)) continue;
+				for (const item of appsArray) {
+					const app = Object.values(item)[0]; // 跳过一级 key
+					if (app.appId === appId) {
+						return app;
+					}
+				}
+			}
+			return null;
+		},
+		searchAppsByName(namePart) {
+			if (!namePart) return [];
+			const lowerNamePart = namePart.toLowerCase();
+			const results = [];
+			for (const categoryKey in this.jsonData) {
+				const appsArray = this.jsonData[categoryKey];
+				if (!Array.isArray(appsArray)) continue;
+				for (const item of appsArray) {
+					const app = Object.values(item)[0]; // 跳过一级 key
+					if (app.name && app.name.toLowerCase().includes(lowerNamePart)) {
+						results.push(app);
+					}
+				}
+			}
+
+			return results; // 返回所有匹配的 app
+		},
+		searchWord(){
+			window.location.href='search.html?like='+this.search;
+			this.trySearchFromUrl();
+
+		},
+		choose(flay){
+			this.topCheck=flay;
+			this.topResult = this.jsonData[flay];
 		}
 	}
 });

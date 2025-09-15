@@ -9,12 +9,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Browse Categories Of Apps&amp;Games - Download at goingapp</title>
 	<link rel="dns-prefetch preconnect" href="../pagead2.googlesyndication.com/pagead/js/f.txt" crossorigin>
-
 	<link rel="canonical" href="index.html"/>
-
 	<meta name="robots"
 	      content="index,category,categoryList,popular,articleList,articleDetail,articleDetail,freeStamp,freeStampDetail,">
-
 	<meta name="progam" content="no-cache">
 	<meta name="description"
 	      content="Download apk for safe and free with goingapp APK downloader. Find popular Android apps &amp; games in different categories">
@@ -29,25 +26,8 @@
 	<meta property="og:site_name" content="goingapp">
 	<link rel="shortcut icon" href=icon/icon.png type="image/x-icon"/>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-
-	<script async src="../pagead2.googlesyndication.com/pagead/js/f6f41.txt?client=ca-pub-4126625698985943"
-	        crossorigin="anonymous"></script>
-
-	<!-- Google tag (gtag.js) -->
-	<script async src="../www.googletagmanager.com/gtag/js2d31?id=G-5KZ8LZNP1G"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-
-		gtag('js', new Date());
-
-		gtag('config', 'G-5KZ8LZNP1G');
-	</script>
-	<link rel="preload" href="css/category.css">
-	<link rel="stylesheet" href="css/category.css">
+	<link rel="preload" href="css/category.css"/>
+	<link rel="stylesheet" href="css/category.css"/>
 </head>
 <body>
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -516,7 +496,7 @@
 		</symbol>
 	</defs>
 </svg>
-
+<div id="index">
 <div class="headWrap" style="background-color: #F9FBFB">
 	<div class="header">
 		<div class="mantle" onclick="siderbarFlag(0)"
@@ -543,7 +523,7 @@
 						</a>
 					</li>
 					<li class="topItem">
-						<a class="item" href="top-chart.html">
+						<a class="item" href="top_chart.html">
 							<p class="topTitle appsTitle">Top Charts</p>
 						</a>
 					</li>
@@ -559,20 +539,18 @@
 			<div class="topR">
 				<div class="search">
 					<input class="searchInput" type="text" placeholder="Search any APK" class="header-searchtext"
-					       onkeydown="enterSearch('.searchInput')"
-					       data-cf-modified-5016e61e6824172b9ab9768d-="">
-					<div class="clearResp">
+						   v-model="search">
+					<div class="clearResp" >
 						<svg t="1680593535408" class="icon" viewBox="0 0 1024 1024" version="1.1"
-						     xmlns="http://www.w3.org/2000/svg" p-id="8686" id="mx_n_1680593535409" width="13.33"
-						     height="13.33">
+							 xmlns="http://www.w3.org/2000/svg" p-id="8686" id="mx_n_1680593535409" width="13.33"
+							 height="13.33">
 							<path d="M512 64c-247.00852 0-448 200.960516-448 448S264.960516 960 512 960c247.00852 0 448-200.960516 448-448S759.039484 64 512 64zM694.752211 649.984034c12.480043 12.54369 12.447359 32.768069-0.063647 45.248112-6.239161 6.208198-14.399785 9.34412-22.591372 9.34412-8.224271 0-16.415858-3.135923-22.65674-9.407768l-137.60043-138.016718-138.047682 136.576912c-6.239161 6.14455-14.368821 9.247789-22.496761 9.247789-8.255235 0-16.479505-3.168606-22.751351-9.504099-12.416396-12.576374-12.320065-32.800753 0.25631-45.248112l137.887703-136.384249-137.376804-137.824056c-12.480043-12.512727-12.447359-32.768069 0.063647-45.248112 12.512727-12.512727 32.735385-12.447359 45.248112 0.063647l137.567746 137.984034 138.047682-136.575192c12.54369-12.447359 32.831716-12.320065 45.248112 0.25631 12.447359 12.576374 12.320065 32.831716-0.25631 45.248112L557.344443 512.127295 694.752211 649.984034z"
-							      fill="#626365" p-id="8687"></path>
+								  fill="#626365" p-id="8687"></path>
 						</svg>
 					</div>
-					<button class="searchIcon" type="submit"
-					        onclick="jumpSearch('.searchInput')"
-					        aria-label="searchBtn" data-cf-modified-5016e61e6824172b9ab9768d-="">
-						<svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+					<button class="searchIcon" type="submit"  aria-label="searchBtn">
+						<svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20"
+							 fill="none" @click="searchWord">
 							<circle cx="9.1447" cy="9.03924" r="7.6408" stroke="#666666" stroke-width="2"/>
 							<path d="M15.0742 13.8203L20.4977 19.2435" stroke="#666666" stroke-width="2"/>
 						</svg>
@@ -621,7 +599,7 @@
 					</div>
 					<div class="mSearch">
 						<input class="searchInput" type="text" placeholder="Search any APK" class="header-searchtext"
-						       onkeydown="enterSearch('.searchInput')"
+
 						       data-cf-modified-5016e61e6824172b9ab9768d-="">
 						<div class="clearResp">
 							<svg t="1680593535408" class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -632,7 +610,7 @@
 							</svg>
 						</div>
 						<div class="searchIcon"
-						     onclick="jumpSearch('.searchInput')"
+						    @click="trySearchFromUrl"
 						     data-cf-modified-5016e61e6824172b9ab9768d-="">
 							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
 							     fill="none">
@@ -684,7 +662,7 @@
 					</a>
 				</li>
 				<li class="sideItem">
-					<a href="top-chart.html?charts=app">
+					<a href="top_chart.html?charts=app">
 						<svg class="icon">
 							<use xlink:href="#icon-Charts"></use>
 						</svg>
@@ -725,316 +703,35 @@
 			     style="display: inline-block; width: 100%;"
 			     data-full-width-responsive="true">
 			</ins>
-			<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
 		</div>
-		<div class="appAllCategory">
+		<div class="appAllCategory"  v-if="jsonData">
 			<h2 class="categoryTitle">Apps</h2>
 			<ul class="CategoryList">
-				<li class="itemCate">
-					<a class="coverlink" href="category/beauty.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Beauty.png"
-					     alt="Beauty">
-					<div class="itemCateName">Beauty</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/photography.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Photography.png"
-					     alt="Photography">
-					<div class="itemCateName">Photography</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/health-and-fitness.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp"
-					     data-src="/logo/category/Health & Fitness.png" alt="Health & Fitness">
-					<div class="itemCateName">Health & Fitness</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/auto-and-vehicles.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/frame_4849.webp"
-					     alt="Auto & Vehicles">
-					<div class="itemCateName">Auto & Vehicles</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/libraries-and-demo.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp"
-					     data-src="/logo/category/Libraries & Demo.webp" alt="Libraries & Demo">
-					<div class="itemCateName">Libraries & Demo</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/parenting.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Parenting.webp"
-					     alt="Parenting">
-					<div class="itemCateName">Parenting</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/comics.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Comics.png"
-					     alt="Comics">
-					<div class="itemCateName">Comics</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/education.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Education.webp"
-					     alt="Education">
-					<div class="itemCateName">Education</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/news-and-magazines.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp"
-					     data-src="/logo/category/News & Magazines.webp" alt="News & Magazines">
-					<div class="itemCateName">News & Magazines</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/shopping.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Shopping.webp"
-					     alt="Shopping">
-					<div class="itemCateName">Shopping</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/entertainment.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp"
-					     data-src="/logo/category/Entertainment.png" alt="Entertainment">
-					<div class="itemCateName">Entertainment</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/social.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Social.webp"
-					     alt="Social">
-					<div class="itemCateName">Social</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/maps-and-navigation.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp"
-					     data-src="/logo/category/Maps & Navigation.webp" alt="Maps & Navigation">
-					<div class="itemCateName">Maps & Navigation</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/food-and-drink.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp"
-					     data-src="/logo/category/Food & Drink.webp" alt="Food & Drink">
-					<div class="itemCateName">Food & Drink</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/productivity.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp"
-					     data-src="/logo/category/Productivity.webp" alt="Productivity">
-					<div class="itemCateName">Productivity</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/communication.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp"
-					     data-src="/logo/category/Communication.webp" alt="Communication">
-					<div class="itemCateName">Communication</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/business.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Business.png"
-					     alt="Business">
-					<div class="itemCateName">Business</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/video-players.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp"
-					     data-src="/logo/category/Video Players & Editors.webp" alt="Video Players & Editors">
-					<div class="itemCateName">Video Players & Editors</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/music-and-audio.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/music.png"
-					     alt="Music & Audio">
-					<div class="itemCateName">Music & Audio</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/finance.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Finance.webp"
-					     alt="Finance">
-					<div class="itemCateName">Finance</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/lifestyle.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Lifestyle.png"
-					     alt="Lifestyle">
-					<div class="itemCateName">Lifestyle</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/tools.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Tools.webp"
-					     alt="Tools">
-					<div class="itemCateName">Tools</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/art-and-design.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp"
-					     data-src="/logo/category/Art & Design.webp" alt="Art & Design">
-					<div class="itemCateName">Art & Design</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/travel-and-local.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp"
-					     data-src="/logo/category/Travel & Local.webp" alt="Travel & Local">
-					<div class="itemCateName">Travel & Local</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/events.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Events.webp"
-					     alt="Events">
-					<div class="itemCateName">Events</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/weather.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Weather.webp"
-					     alt="Weather">
-					<div class="itemCateName">Weather</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/personalization.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp"
-					     data-src="/logo/category/Personalization.webp" alt="Personalization">
-					<div class="itemCateName">Personalization</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/dating.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Dating.png"
-					     alt="Dating">
-					<div class="itemCateName">Dating</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/books-and-reference.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp"
-					     data-src="/logo/category/Books & Reference.webp" alt="Books & Reference">
-					<div class="itemCateName">Books & Reference</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/house-and-home.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/House & Home.png"
-					     alt="House & Home">
-					<div class="itemCateName">House & Home</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/medical.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Medical.webp"
-					     alt="Medical">
-					<div class="itemCateName">Medical</div>
+				<li v-for="(appInfo, index) in Object.values(jsonData.app).map(categoryObj => categoryObj)"
+					:key="appInfo.top_app_id"
+					class="itemCate"
+				>
+					<a class="coverlink" :href="'category_detail.html?type=' + appInfo.category" aria-label="more"></a>
+					<img class="itemCateImg lazyImg" :src="appInfo.top_app_icon" :alt="appInfo.top_app_name">
+					<div class="itemCateName">{{ appInfo.top_app_name }}</div>
 				</li>
 			</ul>
 		</div>
 
 
-		<div class="gameAllCategory">
+		<div class="gameAllCategory"  v-if="jsonData">
 			<h2 class="categoryTitle">Games</h2>
 			<ul class="CategoryList">
-				<li class="itemCate">
-					<a class="coverlink" href="category/educational.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/educational.webp"
-					     alt="Educational">
-					<div class="itemCateName">Educational</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/puzzle.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/puzzle.webp"
-					     alt="Puzzle">
-					<div class="itemCateName">Puzzle</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/racing.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/racing.webp"
-					     alt="Racing">
-					<div class="itemCateName">Racing</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/arcade.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/arcade.webp"
-					     alt="Arcade">
-					<div class="itemCateName">Arcade</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/board.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Variant5.png"
-					     alt="Board">
-					<div class="itemCateName">Board</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/music.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Music.png"
-					     alt="Music">
-					<div class="itemCateName">Music</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/action.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/action.png"
-					     alt="Action">
-					<div class="itemCateName">Action</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/adventure.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/adventure.webp"
-					     alt="Adventure">
-					<div class="itemCateName">Adventure</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/sports.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Sports.webp"
-					     alt="Sports">
-					<div class="itemCateName">Sports</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/strategy.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Strategy.webp"
-					     alt="Strategy">
-					<div class="itemCateName">Strategy</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/role-playing.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/role.webp"
-					     alt="Role Playing">
-					<div class="itemCateName">Role Playing</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/trivia.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Trivia.webp"
-					     alt="Trivia">
-					<div class="itemCateName">Trivia</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/casual.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/casual.webp"
-					     alt="Casual">
-					<div class="itemCateName">Casual</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/simulation.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Simulation.webp"
-					     alt="Simulation">
-					<div class="itemCateName">Simulation</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/word.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/word.webp"
-					     alt="Word">
-					<div class="itemCateName">Word</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/card.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/card.webp"
-					     alt="Card">
-					<div class="itemCateName">Card</div>
-				</li>
-				<li class="itemCate">
-					<a class="coverlink" href="category/casino.html" aria-label="more"></a>
-					<img class="itemCateImg lazyImg" src="image/loading.webp" data-src="/logo/category/Variant7.png"
-					     alt="Casino">
-					<div class="itemCateName">Casino</div>
+				<li v-for="(appInfo, index) in Object.values(jsonData.game).map(categoryObj => categoryObj)"
+					:key="appInfo.top_app_id"
+					class="itemCate"
+				>
+					<a class="coverlink" :href="'category_detail.html?type=' + appInfo.category" aria-label="more"></a>
+					<img class="itemCateImg lazyImg" :src="appInfo.top_app_icon" :alt="appInfo.top_app_name">
+					<div class="itemCateName">{{ appInfo.top_app_name }}</div>
+					<div class="itemCateCategory">{{ appInfo.category || '' }}</div>
 				</li>
 			</ul>
-		</div>
-
-
-		<div class="breadCrumbs">
-			<a class="crumbs" href="index.html"> Home </a>
-			<span class="icon">></span>
-			<a class="crumbsNow" href="javascript:;"> Category </a>
 		</div>
 	</div>
 </div>
@@ -1065,10 +762,11 @@
 		</div>
 	</div>
 </div>
-
+</div
 <style type="text/css">
 	.footer .top {
 		margin-bottom: 20px;
 	}
 </style>
+<script src="common.js"></script>
 </body>
