@@ -28,7 +28,7 @@
           content="Get your adrenaline pumping with the best free action games apk for Android. Get access to shooting, fighting, and adventure games.">
     <meta property="og:image" content="../icon/icon.png"/>
     <meta property="og:url" content="../index.html">
-    <meta property="og:site_name" content="goingapp">
+    <meta property="og:site_name" content="ApkStore">
     <link rel="shortcut icon" href=../icon/icon.png type="image/x-icon"/>
     <link rel="preload" href="../css/category-list.css">
     <link rel="stylesheet" href="../css/category-list.css">
@@ -652,14 +652,14 @@
             <div class="categoryList" >
                 <ul class="hotAppList">
                     <li class="itemHotAppCont"  v-for="item in typeResult.slice(0, 18)" :key="Object.keys(item)[0]">
-                        <a class="coverlink" href="https://goingearth.com/app?app=com.supercell.brawlstars"
+                        <a class="coverlink" :href="Object.values(item)[0].url"
                            aria-label="more"></a>
                         <img class="itemHotContLogo lazyImg" :src="Object.values(item)[0].icon"
                              :alt="Object.values(item)[0].name">
                         <div class="itemHotContInfo">
                             <p class="itemHotContInfoTitle">{{Object.values(item)[0].name}}</p>
                             <div class="itemHotContInfoDesc">
-                                <span> 4.3 </span>
+                                <span>{{ Object.values(item)[0].score.toFixed(1) }}</span>
                                 <img class="star" src="/logo/star.svg" alt="starIcon">
                             </div>
                         </div>

@@ -1166,8 +1166,8 @@ input {
     line-height: 22px;
     margin-right: 32px;
 }
-.footerWrap .cookie-notice-container {
-    background-color: rgba(255, 255, 255, 0.5);
+
+.footerWrap .footer .cookie-notice-container {
     display: none;
     position: fixed;
     bottom: 0;
@@ -1175,30 +1175,27 @@ input {
     width: 100%;
     color: #6f6f6f;
     text-align: center;
-    z-index: 999999;
     -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 }
-.footerWrap .cookie-notice-container .container {
+.footerWrap .footer .cookie-notice-container .container {
     max-width: 900px;
-    z-index: 2;
     position: relative;
-    text-align: center;
     padding: 10px;
     padding-right: 100px;
     margin: 0 auto;
 }
-.footerWrap .cookie-notice-container .container a,
-.footerWrap .cookie-notice-container .container button,
-.footerWrap .cookie-notice-container .container video {
+.footerWrap .footer .cookie-notice-container .container a,
+.footerWrap .footer .cookie-notice-container .container button,
+.footerWrap .footer .cookie-notice-container .container video {
     -webkit-tap-highlight-color: transparent;
     outline: 0;
     text-decoration: none;
 }
-.footerWrap .cookie-notice-container .container .moreJump {
+.footerWrap .footer .cookie-notice-container .container .moreJump {
     color: #0186FF;
 }
-.footerWrap .cookie-notice-container .container button {
+.footerWrap .footer .cookie-notice-container .container button {
     position: absolute;
     right: 0;
     top: 50%;
@@ -1216,7 +1213,7 @@ input {
     border-radius: 15px;
     cursor: pointer;
 }
-.footerWrap .cookie-notice-container:before {
+.footerWrap .footer .cookie-notice-container:before {
     content: '';
     background-color: rgba(255, 255, 255, 0.3);
     position: absolute;
