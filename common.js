@@ -1,6 +1,8 @@
 new Vue({
 	el: '#index',
 	data: {
+		header:'',
+		footer:'',
 		jsonData: null,
 		search:'',
 		searchResult:null,
@@ -23,6 +25,30 @@ new Vue({
 		}
 	},
 	mounted() {
+		fetch('header.html')
+			.then(res => res.text())
+			.then(html => {
+				this.header = html;
+				this.$nextTick(() => {
+					// header 内按钮事件绑定
+					const btn = document.getElementById('searchIcon');
+					if (btn) {
+						btn.addEventListener('click', () =>this.searchWord());
+					}
+					const input = document.getElementById('searchInput');
+					if (input) {
+						input.value = this.search; // 初始化值
+						input.addEventListener('input', (e) => {
+							this.search = e.target.value; // 手动同步到 Vue data
+						});
+					}
+				});
+			});
+		fetch('footer.html')
+			.then(res => res.text())
+			.then(html => {
+				this.footer = html;
+			});
 		this.getJson();
 	},
 	methods: {

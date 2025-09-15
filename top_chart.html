@@ -502,70 +502,7 @@
         <div class="header">
             <div class="mantle" onclick="siderbarFlag(0)"
                  data-cf-modified-5016e61e6824172b9ab9768d-=""></div>
-            <div class="top">
-                <div class="topL">
-                    <div class="showBtn" onclick="siderbarFlag(1)"
-                         data-cf-modified-5016e61e6824172b9ab9768d-="">
-                        <svg t="1675305136636" class="icon" viewBox="0 0 1024 1024" version="1.1"
-                             xmlns="http://www.w3.org/2000/svg" p-id="2868" width="24" height="24">
-                            <path d="M79.954 686.724h864.092v85.945h-864.092zM79.954 469.027h864.092v85.945h-864.092zM79.954 251.331h864.092v85.943h-864.092z"
-                                  fill="#626365" p-id="2869"></path>
-                        </svg>
-                    </div>
-                    <h1 class="apk-logo">
-                        <a class="logo" href="index.html">
-                            <img class="logoImg" src="logo/home-logo.png" alt="logo">
-                        </a>
-                    </h1>
-                    <ul class="topList">
-                        <li class="topItem">
-                            <a class="item" href="index.html">
-                                <p class="topTitle topicsTitle">Home </p>
-                            </a>
-                        </li>
-                        <li class="topItem">
-                            <a class="item" href="top_chart.html">
-                                <p class="topTitle appsTitle">Top Charts</p>
-                            </a>
-                        </li>
-                        <li class="topItem">
-                            <a class="item" href="category.html">
-                                <p class="topTitle gamesTitle">Category</p>
-                            </a>
-                        </li>
-
-
-                    </ul>
-                </div>
-                <div class="topR">
-                    <div class="search">
-                        <input class="searchInput" type="text" placeholder="Search any APK" class="header-searchtext"
-                               v-model="search">
-                        <div class="clearResp">
-                            <svg t="1680593535408" class="icon" viewBox="0 0 1024 1024" version="1.1"
-                                 xmlns="http://www.w3.org/2000/svg" p-id="8686" id="mx_n_1680593535409" width="13.33"
-                                 height="13.33" >
-                                <path d="M512 64c-247.00852 0-448 200.960516-448 448S264.960516 960 512 960c247.00852 0 448-200.960516 448-448S759.039484 64 512 64zM694.752211 649.984034c12.480043 12.54369 12.447359 32.768069-0.063647 45.248112-6.239161 6.208198-14.399785 9.34412-22.591372 9.34412-8.224271 0-16.415858-3.135923-22.65674-9.407768l-137.60043-138.016718-138.047682 136.576912c-6.239161 6.14455-14.368821 9.247789-22.496761 9.247789-8.255235 0-16.479505-3.168606-22.751351-9.504099-12.416396-12.576374-12.320065-32.800753 0.25631-45.248112l137.887703-136.384249-137.376804-137.824056c-12.480043-12.512727-12.447359-32.768069 0.063647-45.248112 12.512727-12.512727 32.735385-12.447359 45.248112 0.063647l137.567746 137.984034 138.047682-136.575192c12.54369-12.447359 32.831716-12.320065 45.248112 0.25631 12.447359 12.576374 12.320065 32.831716-0.25631 45.248112L557.344443 512.127295 694.752211 649.984034z"
-                                      fill="#626365" p-id="8687"></path>
-                            </svg>
-                        </div>
-                        <button class="searchIcon" type="submit"
-
-                                aria-label="searchBtn" data-cf-modified-5016e61e6824172b9ab9768d-="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20"
-                                 fill="none" @click="searchWord">
-                                <circle cx="9.1447" cy="9.03924" r="7.6408" stroke="#666666" stroke-width="2"/>
-                                <path d="M15.0742 13.8203L20.4977 19.2435" stroke="#666666" stroke-width="2"/>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="realTimeSearchList">
-                        <ul class="realTimeList">
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <div v-html="header"></div>
             <div class="mhead">
                 <div class="mheadcont">
                     <div class="mheadBox">
@@ -797,32 +734,7 @@
         </div>
     </div>
 
-    <div class="footerWrap" style="background-color: #F9FBFB">
-        <div class="footer">
-            <div class="top">
-                <a class="logo" rel="home" title="Best App News &amp; Free APK Download" href="index.html">
-                    <img src="logo/home-logo.png" alt="logo">
-                </a>
-            </div>
-            <div class="tabbar">
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact Us</a>
-                <a href="guidance.html">Guidance</a>
-                <a href="disclaimer.html">Disclaimer</a>
-                <a href="dmca.html">DMCA</a>
-                <a href="privacy-policy.html">Privacy Policy</a>
-                <a href="rules.html">Terms of Service</a>
-            </div>
-        </div>
-        <div class="cookie-notice-container" style="display: block;position: fixed;bottom: 0;left: 0;">
-            <div class="container">
-                We use cookies to improve your experience on our website. By using this site you agree to our use of
-                cookies.
-                <a class="moreJump" href="privacy-policy.html" title="privacyPolicy">Privacy Policy</a>
-                <button class="agree-cookies" onclick="addCookie()">Agree</button>
-            </div>
-        </div>
-    </div>
+    <div v-html="footer"></div>
 </div>
 <style type="text/css">
     .footer .top {
