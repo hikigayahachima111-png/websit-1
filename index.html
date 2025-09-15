@@ -503,7 +503,7 @@
     </defs>
 </svg>
 <div id="index">
-    <div class="headWrap">
+    <div class="headWrap" style="background-color: #F9FBFB">
         <div class="header">
             <div class="mantle" onclick="siderbarFlag(0)"
                  data-cf-modified-5016e61e6824172b9ab9768d-=""></div>
@@ -519,12 +519,17 @@
                     </div>
                     <h1 class="apk-logo">
                         <a class="logo" href="index.html">
-                            <img class="logoImg" src="icon/logo.png" alt="logo">
+                            <img class="logoImg" src="logo/home-logo.png" alt="logo">
                         </a>
                     </h1>
                     <ul class="topList">
+	                    <li class="topItem">
+		                    <a class="item" href="/">
+			                    <p class="topTitle topicsTitle">Home </p>
+		                    </a>
+	                    </li>
                         <li class="topItem">
-                            <a class="item" href="top-chart.html?charts=app">
+                            <a class="item" href="top-chart.html">
                                 <p class="topTitle appsTitle">Top Charts</p>
                             </a>
                         </li>
@@ -533,11 +538,7 @@
                                 <p class="topTitle gamesTitle">Category</p>
                             </a>
                         </li>
-                        <li class="topItem">
-                            <a class="item" href="article.html">
-                                <p class="topTitle topicsTitle">Editor&#39;s Choice </p>
-                            </a>
-                        </li>
+
 
                     </ul>
                 </div>
@@ -701,6 +702,7 @@
             </div>
         </div>
     </div>
+
     <div class="wrap">
         <div class="indexWrap">
             <div class="categoriesModule">
@@ -713,7 +715,7 @@
                     </a>
                 </div>
                 <ul class="CategoryList" v-if="jsonData">
-                    <li class="itemCate" v-for="item in jsonData.game" :key="Object.keys(item)[0]">
+                    <li class="itemCate" v-for="item in jsonData.HOT.slice(0, 5)" :key="Object.keys(item)[0]">
                         <a class="coverlink" href="category/news-and-magazines.html" aria-label="more"></a>
                         <img class="itemCateImg lazyImg" :src="Object.values(item)[0].icon"
                              alt="News & Magazines">
@@ -721,106 +723,10 @@
                     </li>
                 </ul>
             </div>
-            <div class="articleModule">
-                <div class="appsModuleTitle">
-                    <h2 class="apptitle">Editor's Choice</h2>
-                    <a class="more" href="article.html" aria-label="more">
-                        <svg class="icon">
-                            <use xlink:href="#icon-more"></use>
-                        </svg>
-                    </a>
-                </div>
-                <ul class="articleList">
-                    <li class="itemArticleCont">
-                        <a class="coverlink"
-                           href="article/event-6-must-have-apps-for-the-tech-savvy-dad-of-2025-fathers-day-edition.html"
-                           aria-label="more"></a>
-                        <img class="itemAtcleImg lazyImg"
-                             src="image/loading.webp"
-                             data-src="upload-logo/When-is-Fathers-Day-in-Dubai-2025.webp"
-                             alt="logo">
-                        <p class="itemAtcleName">6 Must-Have Apps for the Tech-Savvy Dad of 2025: Father’s Day
-                            Edition</p>
-                    </li>
-                    <li class="itemArticleCont">
-                        <a class="coverlink"
-                           href="article/event-celebrate-mothers-day-with-the-perfect-gifts-an-app-guide.html"
-                           aria-label="more"></a>
-                        <img class="itemAtcleImg lazyImg"
-                             src="image/loading.webp"
-                             data-src="upload-logo/event-celebrate-mothers-day-with-the-perfect-gifts-an-app-guide.webp"
-                             alt="logo">
-                        <p class="itemAtcleName">Celebrate Mother’s Day with the Perfect Gifts: An App Guide</p>
-                    </li>
-                    <li class="itemArticleCont">
-                        <a class="coverlink"
-                           href="article/dhgate-the-hidden-gem-of-online-wholesale-shopping.html"
-                           aria-label="more"></a>
-                        <img class="itemAtcleImg lazyImg"
-                             src="image/loading.webp"
-                             data-src="upload-logo/dhgate-the-hidden-gem-of-online-wholesale-shopping1.webp"
-                             alt="logo">
-                        <p class="itemAtcleName">DHgate: The Hidden Gem of Online Wholesale Shopping</p>
-                    </li>
-                    <li class="itemArticleCont">
-                        <a class="coverlink"
-                           href="article/a-critical-review-of-intuit-credit-karma.html"
-                           aria-label="more"></a>
-                        <img class="itemAtcleImg lazyImg"
-                             src="image/loading.webp"
-                             data-src="upload-logo/a-critical-review-of-intuit-credit-karma.webp"
-                             alt="logo">
-                        <p class="itemAtcleName">Navigating the Financial Landscape: A Critical Review of Intuit Credit
-                            Karma</p>
-                    </li>
-                    <li class="itemArticleCont">
-                        <a class="coverlink"
-                           href="article/event-easter-travel-guide-how-to-make-with-tripadvisor.html"
-                           aria-label="more"></a>
-                        <img class="itemAtcleImg lazyImg"
-                             src="image/loading.webp"
-                             data-src="upload-logo/event-easter-travel-guide-how-to-make-with-tripadvisor.webp"
-                             alt="logo">
-                        <p class="itemAtcleName">Easter Travel Guide: How to Make the Most of Your Holiday with
-                            TripAdvisor</p>
-                    </li>
-                    <li class="itemArticleCont">
-                        <a class="coverlink"
-                           href="article/event-celebrate-easter-your-ultimate-guide-to-a-fun-filled-holiday.html"
-                           aria-label="more"></a>
-                        <img class="itemAtcleImg lazyImg"
-                             src="image/loading.webp"
-                             data-src="upload-logo/event-celebrate-easter-your-ultimate-guide-to-a-fun-filled-holiday.webp"
-                             alt="logo">
-                        <p class="itemAtcleName">Celebrate Easter with These Must-Have Apps: Your Ultimate Guide to a
-                            Fun-Filled Holiday</p>
-                    </li>
-                    <li class="itemArticleCont">
-                        <a class="coverlink"
-                           href="article/event-tractive-gp-the-paw-fect-companion.html"
-                           aria-label="more"></a>
-                        <img class="itemAtcleImg lazyImg"
-                             src="image/loading.webp"
-                             data-src="upload-logo/event-tractive-gp-the-paw-fect-companion.webp"
-                             alt="logo">
-                        <p class="itemAtcleName">Tractive GPS: The Paw - fect Companion for Your Furry Friends on
-                            National
-                            Pet Day</p>
-                    </li>
-                    <li class="itemArticleCont">
-                        <a class="coverlink"
-                           href="article/event-celebrate-national-pet-day-must-have-apps.html"
-                           aria-label="more"></a>
-                        <img class="itemAtcleImg lazyImg"
-                             src="image/loading.webp"
-                             data-src="upload-logo/event-celebrate-national-pet-day-must-have-apps.webp"
-                             alt="logo">
-                        <p class="itemAtcleName">Celebrate National Pet Day: 6 Must-Have Apps for Pet Lovers</p>
-                    </li>
-                </ul>
-            </div>
+           
             <div class="ad-box ads-1" style="height: auto !important;">
-                <p class="adTitle">ADVERTISEMENT</p>
+                <p class="adTitle">广告位</p>
+<!--                <p class="adTitle">ADVERTISEMENT</p>-->
                 <!-- goingearthdisplay -->
                 <ins class="adsbygoogle adsHeight"
                      data-ad-client="ca-pub-4126625698985943"
@@ -839,277 +745,17 @@
                         </svg>
                     </a>
                 </div>
-                <ul class="topAppList">
-                    <li class="itemAppCont">
+                <ul class="topAppList" v-if="jsonData">
+                    <li class="itemAppCont"  v-for="item in jsonData.TOP_FREE.slice(0, 18)" :key="Object.keys(item)[0]">
                         <a class="coverlink" href="app013d.html?app=com.geico.mobile" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp" data-src="app_logo/geico-mobile.webp"
-                             alt="logo">
+                        <img class="ItemAppLogo lazyImg"  :src="Object.values(item)[0].icon"
+         :alt="Object.values(item)[0].name"
+                         >
                         <div class="itemAppDesc">
                             <p class="itemAppName">GEICO Mobile - Car Insurance</p>
                             <p class="itemAppCate">Finance</p>
                             <div class="itemAppStart">
                                 <span>4.6</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="appc7ad.html?app=com.qvc" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp" data-src="app_logo/com.qvc.webp"
-                             alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">QVC Mobile Shopping (US)</p>
-                            <p class="itemAppCate">Shopping</p>
-                            <div class="itemAppStart">
-                                <span>4.4</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="appda57.html?app=com.usbank.mobilebanking" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="upload-logo/com.usbank.mobilebanking.jpg" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">U.S. Bank Mobile Banking</p>
-                            <p class="itemAppCate">Finance</p>
-                            <div class="itemAppStart">
-                                <span>4.7</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app6550.html?app=com.greendot.walmart.prepaid" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.greendot.walmart.prepaid.webp" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Walmart MoneyCard</p>
-                            <p class="itemAppCate">Finance</p>
-                            <div class="itemAppStart">
-                                <span>3.8</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="appb988.html?app=com.discoverfinancial.mobile" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.discoverfinancial.mobile.webp" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Discover Mobile</p>
-                            <p class="itemAppCate">Finance</p>
-                            <div class="itemAppStart">
-                                <span>4.6</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app1423.html?app=io.metamask" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp" data-src="app_logo/io.metamask.webp"
-                             alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">MetaMask - Blockchain Wallet</p>
-                            <p class="itemAppCate">Finance</p>
-                            <div class="itemAppStart">
-                                <span>4.5</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="appb7ea.html?app=com.greendotcorp.go2bank" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="upload-logo/QPGY2kpEdGKqafKRWSFbPnr2gnP9irrZ_n8pWOSmsKpMyDLeIBFBrsgXQlDfcHt1kpPN.webp"
-                             alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">GO2bank: Mobile banking</p>
-                            <p class="itemAppCate">Finance</p>
-                            <div class="itemAppStart">
-                                <span>4.5</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app9059.html?app=com.allstate.view" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.allstate.view.webp"
-                             alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Allstate Mobile</p>
-                            <p class="itemAppCate">Finance</p>
-                            <div class="itemAppStart">
-                                <span>3.8</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app774c.html?app=com.payfare.doordash" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.payfare.doordash.webp" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">DasherDirect, by Payfare</p>
-                            <p class="itemAppCate">Finance</p>
-                            <div class="itemAppStart">
-                                <span>4.7</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app9ae9.html?app=com.current.app" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.current.app.webp"
-                             alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Current: The Future of Banking</p>
-                            <p class="itemAppCate">Finance</p>
-                            <div class="itemAppStart">
-                                <span>4.6</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app8524.html?app=com.paypal.android.p2pmobile" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp" data-src="app_logo/paypal.webp"
-                             alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">PayPal - Send, Shop, Manage</p>
-                            <p class="itemAppCate">Finance</p>
-                            <div class="itemAppStart">
-                                <span>4.2</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app8671.html?app=finance.empower" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/finance.empower.webp"
-                             alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Empower: Instant Cash Advance.</p>
-                            <p class="itemAppCate">Finance</p>
-                            <div class="itemAppStart">
-                                <span>4.7</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app2d85.html?app=com.kikoff" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp" data-src="app_logo/com.kikoff.webp"
-                             alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Kikoff - Build Credit Quickly</p>
-                            <p class="itemAppCate">Finance</p>
-                            <div class="itemAppStart">
-                                <span>4.4</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="appf506.html?app=com.dave" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp" data-src="app_logo/com.dave.webp"
-                             alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Dave - Banking & Cash Advance</p>
-                            <p class="itemAppCate">Finance</p>
-                            <div class="itemAppStart">
-                                <span>4.3</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="appe949.html?app=com.google.android.apps.nbu.paisa.user"
-                           aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.google.android.apps.nbu.paisa.user.webp" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Google Pay: Save and Pay</p>
-                            <p class="itemAppCate">Finance</p>
-                            <div class="itemAppStart">
-                                <span>4.1</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="appd395.html?app=com.venmo" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp" data-src="app_logo/venmo.webp"
-                             alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Venmo</p>
-                            <p class="itemAppCate">Finance</p>
-                            <div class="itemAppStart">
-                                <span>4.2</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app5ff8.html?app=com.google.android.apps.walletnfcrel"
-                           aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="upload-logo/image%20%2890%29.webp" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Google Wallet</p>
-                            <p class="itemAppCate">Finance</p>
-                            <div class="itemAppStart">
-                                <span>4.4</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app14e8.html?app=com.zellepay.zelle" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp" data-src="upload-logo/zelle.webp"
-                             alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Zelle</p>
-                            <p class="itemAppCate">Finance</p>
-                            <div class="itemAppStart">
-                                <span>4.0</span>
                                 <svg width="12" height="12">
                                     <use xlink:href="#icon-start"></use>
                                 </svg>
@@ -1122,19 +768,19 @@
 
             <div class="topFreeModule">
                 <div class="appsModuleTitle">
-                    <h2 class="apptitle">Top Free Games</h2>
+                    <h2 class="apptitle">NEW Games</h2>
                     <a class="more" href="top-chart028a.html?charts=game" aria-label="more">
                         <svg class="icon">
                             <use xlink:href="#icon-more"></use>
                         </svg>
                     </a>
                 </div>
-                <ul class="topAppList">
-                    <li class="itemAppCont">
+                <ul class="topAppList" v-if="jsonData">
+                    <li class="itemAppCont"  v-for="item in jsonData.NEW_FREE.slice(0, 5)" 
+      :key="Object.keys(item)[0]">
                         <a class="coverlink" href="app971d.html?app=com.draw.to.pee.bo" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.draw.to.pee.bo.png"
-                             alt="logo">
+                        <img class="ItemAppLogo lazyImg" :src="Object.values(item)[0].icon"
+         :alt="Object.values(item)[0].name">
                         <div class="itemAppDesc">
                             <p class="itemAppName">Toilet Rush Race: Draw Puzzle</p>
                             <p class="itemAppCate">Puzzle</p>
@@ -1146,409 +792,28 @@
                             </div>
                         </div>
                     </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app6350.html?app=air.com.sgn.cookiejam.gp" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp" data-src="app_logo/cookie-jam.webp"
-                             alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Cookie Jam™ Match 3 Games</p>
-                            <p class="itemAppCate">Puzzle</p>
-                            <div class="itemAppStart">
-                                <span>4.5</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app1801.html?app=block.puzzle.color.blast.game"
-                           aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/block.puzzle.color.blast.game.webp" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Color Blast:Block Puzzle</p>
-                            <p class="itemAppCate">Puzzle</p>
-                            <div class="itemAppStart">
-                                <span>4.5</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="appa110.html?app=com.nt.games.tangledsnakes" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.nt.games.tangledsnakes.webp" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Tangled Snakes</p>
-                            <p class="itemAppCate">Puzzle</p>
-                            <div class="itemAppStart">
-                                <span>4.3</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="appb994.html?app=com.crescivegames.twistedtangle"
-                           aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.crescivegames.twistedtangle.webp" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Twisted Tangle</p>
-                            <p class="itemAppCate">Puzzle</p>
-                            <div class="itemAppStart">
-                                <span>4.1</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app71ab.html?app=easy.sudoku.puzzle.solver.free"
-                           aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/easy.sudoku.puzzle.solver.free.webp" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Sudoku - Classic Sudoku Puzzle</p>
-                            <p class="itemAppCate">Puzzle</p>
-                            <div class="itemAppStart">
-                                <span>4.6</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="appe770.html?app=spot.hidden.difference" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/spot.hidden.difference.png" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Spot The Hidden Differences</p>
-                            <p class="itemAppCate">Puzzle</p>
-                            <div class="itemAppStart">
-                                <span>4.8</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="appcf71.html?app=com.impossible.date2.tricky.riddles"
-                           aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.impossible.date2.tricky.riddles.webp" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Impossible Date 2: Fun Riddle</p>
-                            <p class="itemAppCate">Puzzle</p>
-                            <div class="itemAppStart">
-                                <span>4.7</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app85f6.html?app=doge.rush.race.toilet.rescue.puzzle"
-                           aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/doge.rush.race.toilet.rescue.puzzle.webp" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Rush Home Toilet Draw Puzzle</p>
-                            <p class="itemAppCate">Puzzle</p>
-                            <div class="itemAppStart">
-                                <span>4.3</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="appeff6.html?app=net.peakgames.toonblast" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/net.peakgames.toonblast.webp" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Toon Blast</p>
-                            <p class="itemAppCate">Puzzle</p>
-                            <div class="itemAppStart">
-                                <span>4.6</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app9310.html?app=com.mergeland.alices.wonder.adventure"
-                           aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="upload-logo/155c2eb1-0acf-4a5a-8366-c7c709640b11.webp" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Alice's Dream：Merge Island</p>
-                            <p class="itemAppCate">Puzzle</p>
-                            <div class="itemAppStart">
-                                <span>4.4</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app7c8e.html?app=jigsaw.puzzle.game.banana" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="logo/jigsaw.puzzle.game.banana.png" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Jigsawscapes® - Jigsaw Puzzles</p>
-                            <p class="itemAppCate">Puzzle</p>
-                            <div class="itemAppStart">
-                                <span>4.7</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app33bf.html?app=com.tripledot.woodoku" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.tripledot.woodoku.webp" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Woodoku - Wood Block Puzzle</p>
-                            <p class="itemAppCate">Puzzle</p>
-                            <div class="itemAppStart">
-                                <span>4.4</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app3ef6.html?app=com.miracle.savethedoge.an" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.miracle.savethedoge.an.png" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Save the Doge</p>
-                            <p class="itemAppCate">Puzzle</p>
-                            <div class="itemAppStart">
-                                <span>4.2</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app480f.html?app=com.tcg.fpsdungeonminer" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.tcg.fpsdungeonminer.png" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Merge Miners</p>
-                            <p class="itemAppCate">Puzzle</p>
-                            <div class="itemAppStart">
-                                <span>4.1</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app060f.html?app=com.weegoon.thiefpuzzle" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.weegoon.thiefpuzzle.webp" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Thief Puzzle: to pass a level</p>
-                            <p class="itemAppCate">Puzzle</p>
-                            <div class="itemAppStart">
-                                <span>4.3</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app9aa9.html?app=com.playrix.fishdomdd.gplay" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/fishdom-deep-dive.webp"
-                             alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Fishdom</p>
-                            <p class="itemAppCate">Puzzle</p>
-                            <div class="itemAppStart">
-                                <span>4.6</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemAppCont">
-                        <a class="coverlink" href="app31a5.html?app=com.dreamgames.royalmatch" aria-label="more"></a>
-                        <img class="ItemAppLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.dreamgames.royalmatch.webp" alt="logo">
-                        <div class="itemAppDesc">
-                            <p class="itemAppName">Royal Match</p>
-                            <p class="itemAppCate">Puzzle</p>
-                            <div class="itemAppStart">
-                                <span>4.6</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
+                   
                 </ul>
             </div>
 
 
-            <div class="bannerWrap">
-                <ul class="bannerList">
-                    <li class="item">
-                        <a class="coverlink" href="app8524.html?app=com.paypal.android.p2pmobile" aria-label="more"></a>
-                        <img class="itemImg lazyImg" src="image/loading.webp"
-                             data-src="https://play-lh.googleusercontent.com/fNOZcpDpBdSZE7EM-PDUY1b9pKMr9g0JGLZ6jWqGXoRNhhx51L9g30EXYSjeAgUk318"
-                             alt="PayPal - Send, Shop, Manage">
-                        <div class="itemCrad">
-                            <div class="itemCardLeft">
-                                <img class="itemlogo lazyImg" src="image/loading.webp" data-src="app_logo/paypal.webp"
-                                     alt="PayPal - Send, Shop, Manage">
-                                <div class="itemInfo">
-                                    <p class="itemText">PayPal - Send, Shop, Manage</p>
-                                    <div class="itemScore">
-                                        <div class="stars">
-                                            <svg width="12" height="12">
-                                                <use xlink:href="#icon-start"></use>
-                                            </svg>
-                                            <svg width="12" height="12">
-                                                <use xlink:href="#icon-start"></use>
-                                            </svg>
-                                            <svg width="12" height="12">
-                                                <use xlink:href="#icon-start"></use>
-                                            </svg>
-                                            <svg width="12" height="12">
-                                                <use xlink:href="#icon-start"></use>
-                                            </svg>
-                                            <svg width="12" height="12">
-                                                <use xlink:href="#HalfStar"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="scoreNum">4.2</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="itemCardRight">
-                                <div class="itemDownload">Download</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <a class="coverlink" href="app14e8.html?app=com.zellepay.zelle" aria-label="more"></a>
-                        <img class="itemImg lazyImg" src="image/loading.webp"
-                             data-src="https://play-lh.googleusercontent.com/5NmCkuU4Tb8R_M5ub5KPW9drFqDiqjBEpncoOzW83TKV0E5sid1Cyt4RkbfAKo9aiHo"
-                             alt="Zelle">
-                        <div class="itemCrad">
-                            <div class="itemCardLeft">
-                                <img class="itemlogo lazyImg" src="image/loading.webp" data-src="upload-logo/zelle.webp"
-                                     alt="Zelle">
-                                <div class="itemInfo">
-                                    <p class="itemText">Zelle</p>
-                                    <div class="itemScore">
-                                        <div class="stars">
-                                            <svg width="12" height="12">
-                                                <use xlink:href="#icon-start"></use>
-                                            </svg>
-                                            <svg width="12" height="12">
-                                                <use xlink:href="#icon-start"></use>
-                                            </svg>
-                                            <svg width="12" height="12">
-                                                <use xlink:href="#icon-start"></use>
-                                            </svg>
-                                            <svg width="12" height="12">
-                                                <use xlink:href="#icon-start"></use>
-                                            </svg>
-                                            <svg width="12" height="12">
-                                                <use xlink:href="#HalfStar"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="scoreNum">4.0</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="itemCardRight">
-                                <div class="itemDownload">Download</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <a class="coverlink" href="app9310.html?app=com.mergeland.alices.wonder.adventure"
-                           aria-label="more"></a>
-                        <img class="itemImg lazyImg" src="image/loading.webp"
-                             data-src="https://play-lh.googleusercontent.com/ChiGAoK06R9KAzdtg4Dugsopc__dJgltmyP9rYZ8e0L11PDzjpZDC0eodwtR443jozA"
-                             alt="Alice's Dream：Merge Island">
-                        <div class="itemCrad">
-                            <div class="itemCardLeft">
-                                <img class="itemlogo lazyImg" src="image/loading.webp"
-                                     data-src="upload-logo/155c2eb1-0acf-4a5a-8366-c7c709640b11.webp"
-                                     alt="Alice's Dream：Merge Island">
-                                <div class="itemInfo">
-                                    <p class="itemText">Alice's Dream：Merge Island</p>
-                                    <div class="itemScore">
-                                        <div class="stars">
-                                            <svg width="12" height="12">
-                                                <use xlink:href="#icon-start"></use>
-                                            </svg>
-                                            <svg width="12" height="12">
-                                                <use xlink:href="#icon-start"></use>
-                                            </svg>
-                                            <svg width="12" height="12">
-                                                <use xlink:href="#icon-start"></use>
-                                            </svg>
-                                            <svg width="12" height="12">
-                                                <use xlink:href="#icon-start"></use>
-                                            </svg>
-                                            <svg width="12" height="12">
-                                                <use xlink:href="#HalfStar"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="scoreNum">4.4</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="itemCardRight">
-                                <div class="itemDownload">Download</div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-
+ 
             <div class="hotAppModule">
                 <div class="appsModuleTitle">
-                    <h2 class="apptitle">Hot Social Apps</h2>
+                    <h2 class="apptitle">TOP GROSSING</h2>
                     <a class="more" href="category/social.html" aria-label="more">
                         <svg class="icon">
                             <use xlink:href="#icon-more"></use>
                         </svg>
                     </a>
                 </div>
-                <ul class="hotAppList">
-                    <li class="itemHotAppCont">
+                <ul class="hotAppList" v-if="jsonData">
+                    <li class="itemHotAppCont" v-for="item in jsonData.TOP_GROSSING.slice(0, 5)" 
+      :key="Object.keys(item)[0]">
                         <a class="coverlink" href="appd95a.html?app=com.facebook.katana" aria-label="more"></a>
-                        <img class="itemHotContLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.facebook.katana.webp"
-                             alt="logo">
+                        <img class="itemHotContLogo lazyImg" 
+                             :src="Object.values(item)[0].icon"
+         :alt="Object.values(item)[0].name">
                         <div class="itemHotContInfo">
                             <p class="itemHotContInfoTitle">Facebook</p>
                             <div class="itemHotContInfoDesc">
@@ -1559,124 +824,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="itemHotAppCont">
-                        <a class="coverlink" href="app7b11.html?app=com.instagram.barcelona" aria-label="more"></a>
-                        <img class="itemHotContLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.instagram.barcelona.webp"
-                             alt="logo">
-                        <div class="itemHotContInfo">
-                            <p class="itemHotContInfoTitle">Threads, an Instagram app</p>
-                            <div class="itemHotContInfoDesc">
-                                <span>4.1</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemHotAppCont">
-                        <a class="coverlink" href="appa473.html?app=com.twitter.android" aria-label="more"></a>
-                        <img class="itemHotContLogo lazyImg" src="image/loading.webp"
-                             data-src="upload-logo/com.twitter.android.png"
-                             alt="logo">
-                        <div class="itemHotContInfo">
-                            <p class="itemHotContInfoTitle">X</p>
-                            <div class="itemHotContInfoDesc">
-                                <span>3.8</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemHotAppCont">
-                        <a class="coverlink" href="app3db5.html?app=com.zhiliaoapp.musically" aria-label="more"></a>
-                        <img class="itemHotContLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/tiktok-musically.webp"
-                             alt="logo">
-                        <div class="itemHotContInfo">
-                            <p class="itemHotContInfoTitle">TikTok</p>
-                            <div class="itemHotContInfoDesc">
-                                <span>4.3</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemHotAppCont">
-                        <a class="coverlink" href="app2c95.html?app=com.instagram.android" aria-label="more"></a>
-                        <img class="itemHotContLogo lazyImg" src="image/loading.webp"
-                             data-src="upload-logo/instagram.webp"
-                             alt="logo">
-                        <div class="itemHotContInfo">
-                            <p class="itemHotContInfoTitle">Instagram</p>
-                            <div class="itemHotContInfoDesc">
-                                <span>4.0</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemHotAppCont">
-                        <a class="coverlink" href="appf947.html?app=com.facebook.lite" aria-label="more"></a>
-                        <img class="itemHotContLogo lazyImg" src="image/loading.webp"
-                             data-src="upload-logo/com.facebook.lite.webp"
-                             alt="logo">
-                        <div class="itemHotContInfo">
-                            <p class="itemHotContInfoTitle">Facebook Lite</p>
-                            <div class="itemHotContInfoDesc">
-                                <span>3.5</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemHotAppCont">
-                        <a class="coverlink" href="app5773.html?app=com.reddit.frontpage" aria-label="more"></a>
-                        <img class="itemHotContLogo lazyImg" src="image/loading.webp" data-src="app_logo/reddit.webp"
-                             alt="logo">
-                        <div class="itemHotContInfo">
-                            <p class="itemHotContInfoTitle">Reddit</p>
-                            <div class="itemHotContInfoDesc">
-                                <span>2.8</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemHotAppCont">
-                        <a class="coverlink" href="appf1c5.html?app=com.americasbestpics" aria-label="more"></a>
-                        <img class="itemHotContLogo lazyImg" src="image/loading.webp"
-                             data-src="app_logo/com.americasbestpics.webp"
-                             alt="logo">
-                        <div class="itemHotContInfo">
-                            <p class="itemHotContInfoTitle">ABPV America’s best pics&vids</p>
-                            <div class="itemHotContInfoDesc">
-                                <span>4.0</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="itemHotAppCont">
-                        <a class="coverlink" href="app41d4.html?app=sg.bigo.live" aria-label="more"></a>
-                        <img class="itemHotContLogo lazyImg" src="image/loading.webp" data-src="app_logo/bigo-live.webp"
-                             alt="logo">
-                        <div class="itemHotContInfo">
-                            <p class="itemHotContInfoTitle">Bigo Live - Live Streaming App</p>
-                            <div class="itemHotContInfoDesc">
-                                <span>4.4</span>
-                                <svg width="12" height="12">
-                                    <use xlink:href="#icon-start"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </li>
+               
                 </ul>
             </div>
             <div class="hotAppModule">
@@ -1828,15 +976,15 @@
             </div>
         </div>
     </div>
-    <div class="footerWrap">
+
+    <div class="footerWrap" style="background-color: #F9FBFB;">
         <div class="footer">
             <div class="top">
                 <a class="logo" rel="home" title="Best App News &amp; Free APK Download" href="index.html">
-                    <img src="icon/logo.png" alt="logo">
+                    <img src="logo/home-logo.png" alt="logo">
                 </a>
-
             </div>
-            <div class="tabbar">
+            <div class="tabbar" >
                 <a href="about.html">About Us</a>
                 <a href="contact.html">Contact Us</a>
                 <a href="guidance.html">Guidance</a>
@@ -1856,39 +1004,12 @@
         </div>
     </div>
 </div>
+
 <style type="text/css">
     .footer .top {
         margin-bottom: 20px;
     }
 </style>
 </body>
-<script type="text/javascript">
-    new Vue({
-        el: '#index',
-        data: {
-            jsonData: null
-        },
-        mounted() {
-            this.getJson();
-        },
-        methods: {
-            getJson() {
-                const url = '/app_list.json'; // 替换为你的远程 JSON URL
-                fetch(url)
-                    .then(res => {
-                        if (!res.ok) throw new Error(`HTTP 错误! 状态码: ${res.status}`);
-                        return res.json();
-                    })
-                    .then(data => {
-                        this.jsonData = data;
-                        console.log(this.jsonData)
-                    })
-                    .catch(err => {
-                        console.error("加载远程 JSON 失败:", err);
-                        alert("加载远程 JSON 失败，请检查 URL 或网络。");
-                    });
-            }
-        }
-    });
-</script>
+<script src="common.js" ></script>
 </html>

@@ -1,8 +1,9 @@
 /* 消除边距 */
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
+
 body,
 hr,
 dl,
@@ -24,2349 +25,2768 @@ input,
 textarea,
 blockquote,
 p {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
+
 /*列表样式消除*/
 ol,
 ul,
 li {
-  list-style: none;
+	list-style: none;
 }
+
 /* a标签样式重置 */
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
+
 /*盒模型默认使用内边框*/
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
+
 /*清除浮动*/
 .clearfix:before,
 .clearfix:after {
-  content: "";
-  display: table;
+	content: "";
+	display: table;
 }
+
 .clearfix:after {
-  clear: both;
+	clear: both;
 }
+
 /* Hides from IE-mac */
 * html .clearfix {
-  height: 1%;
+	height: 1%;
 }
+
 .clearfix {
-  display: block;
+	display: block;
 }
+
 /* End hide from IE-mac */
 * + html .clearfix {
-  min-height: 1%;
+	min-height: 1%;
 }
+
 /* IE7 */
 /* 添加浮动 */
 .left {
-  float: left;
+	float: left;
 }
+
 .right {
-  float: right;
+	float: right;
 }
+
 /*合并表格边框*/
 table,
 td,
 tr,
 th {
-  border-collapse: collapse;
+	border-collapse: collapse;
 }
+
 /*img在盒子中有下边距*/
 img {
-  /*IE7*/
-  border: none;
-  vertical-align: middle;
-  object-fit: cover;
+	/*IE7*/
+	border: none;
+	vertical-align: middle;
+	object-fit: cover;
 }
+
 /*全局设置*/
 body {
-  font-style: normal;
+	font-style: normal;
 }
+
 /* 单行文本超出隐藏并显示省略 */
 .overflow-1 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
+
 /* 多行文本超出隐藏并显示省略 */
 .overFlow-n {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
 }
+
 ul::-webkit-scrollbar {
-  width: 0 !important;
+	width: 0 !important;
 }
+
 /* 定义 Poppins 字体 */
 /* Poppins Black */
 @font-face {
-  font-family: 'Poppins';
-  src: url(font/Poppins-Black.html);
-  font-weight: 600;
-  /* 根据字体文件的权重进行调整 */
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Poppins';
+	src: url(font/Poppins-Black.html);
+	font-weight: 600;
+	/* 根据字体文件的权重进行调整 */
+	font-style: normal;
+	font-display: swap;
 }
+
 /* Poppins Black Italic */
 @font-face {
-  font-family: 'Poppins';
-  src: url(font/Poppins-BlackItalic.html);
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Poppins';
+	src: url(font/Poppins-BlackItalic.html);
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
 }
+
 /* Poppins Bold */
 @font-face {
-  font-family: 'Poppins';
-  src: url(font/Poppins-Bold.html);
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Poppins';
+	src: url(font/Poppins-Bold.html);
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
 }
+
 /* Poppins Bold Italic */
 @font-face {
-  font-family: 'Poppins';
-  src: url(font/Poppins-BoldItalic.html);
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Poppins';
+	src: url(font/Poppins-BoldItalic.html);
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
 }
+
 /* Poppins Extra Bold */
 @font-face {
-  font-family: 'Poppins';
-  src: url(font/Poppins-ExtraBold.html);
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Poppins';
+	src: url(font/Poppins-ExtraBold.html);
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
 }
+
 /* Poppins Extra Bold Italic */
 @font-face {
-  font-family: 'Poppins';
-  src: url(font/Poppins-ExtraBoldItalic.html);
-  font-weight: 800;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Poppins';
+	src: url(font/Poppins-ExtraBoldItalic.html);
+	font-weight: 800;
+	font-style: italic;
+	font-display: swap;
 }
+
 /* Poppins Extra Light */
 @font-face {
-  font-family: 'Poppins';
-  src: url(font/Poppins-ExtraLight.html);
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Poppins';
+	src: url(font/Poppins-ExtraLight.html);
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
 }
+
 /* Poppins Extra Light Italic */
 @font-face {
-  font-family: 'Poppins';
-  src: url(font/Poppins-ExtraLightItalic.html);
-  font-weight: 200;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Poppins';
+	src: url(font/Poppins-ExtraLightItalic.html);
+	font-weight: 200;
+	font-style: italic;
+	font-display: swap;
 }
+
 /* Poppins Italic */
 @font-face {
-  font-family: 'Poppins';
-  src: url(font/Poppins-Italic.html);
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Poppins';
+	src: url(font/Poppins-Italic.html);
+	font-style: italic;
+	font-display: swap;
 }
+
 /* Poppins Light */
 @font-face {
-  font-family: 'Poppins';
-  src: url(font/Poppins-Light.html);
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Poppins';
+	src: url(font/Poppins-Light.html);
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
 }
+
 /* Poppins Light Italic */
 @font-face {
-  font-family: 'Poppins';
-  src: url(font/Poppins-LightItalic.html);
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Poppins';
+	src: url(font/Poppins-LightItalic.html);
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
 }
+
 /* Poppins Medium */
 @font-face {
-  font-family: 'Poppins';
-  src: url(font/Poppins-Medium.ttf);
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Poppins';
+	src: url(font/Poppins-Medium.ttf);
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
 }
+
 /* Poppins Medium Italic */
 @font-face {
-  font-family: 'Poppins';
-  src: url(font/Poppins-MediumItalic.html);
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Poppins';
+	src: url(font/Poppins-MediumItalic.html);
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
 }
+
 /* Poppins Regular */
 @font-face {
-  font-family: 'Poppins';
-  src: url(font/Poppins-Regular.ttf);
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Poppins';
+	src: url(font/Poppins-Regular.ttf);
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
+
 /* Poppins Semi Bold */
 @font-face {
-  font-family: 'Poppins';
-  src: url(font/Poppins-SemiBold.ttf);
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Poppins';
+	src: url(font/Poppins-SemiBold.ttf);
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
 }
+
 /* Poppins Semi Bold Italic */
 @font-face {
-  font-family: 'Poppins';
-  src: url(font/Poppins-SemiBoldItalic.html);
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Poppins';
+	src: url(font/Poppins-SemiBoldItalic.html);
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
 }
+
 /* Poppins Thin */
 @font-face {
-  font-family: 'Poppins';
-  src: url(font/Poppins-Thin.html);
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Poppins';
+	src: url(font/Poppins-Thin.html);
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
 }
+
 /* Poppins Thin Italic */
 @font-face {
-  font-family: 'Poppins';
-  src: url(font/Poppins-ThinItalic.html);
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Poppins';
+	src: url(font/Poppins-ThinItalic.html);
+	font-weight: 100;
+	font-style: italic;
+	font-display: swap;
 }
+
 /* 定义 Roboto 字体 */
 /* Roboto Black */
 @font-face {
-  font-family: 'Roboto';
-  src: url(font/Roboto-Black.ttf);
-  font-weight: 600;
-  /* 根据字体文件的权重进行调整 */
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Roboto';
+	src: url(font/Roboto-Black.ttf);
+	font-weight: 600;
+	/* 根据字体文件的权重进行调整 */
+	font-style: normal;
+	font-display: swap;
 }
+
 /* Roboto Black Italic */
 @font-face {
-  font-family: 'Roboto';
-  src: url(font/Roboto-BlackItalic.html);
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Roboto';
+	src: url(font/Roboto-BlackItalic.html);
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
 }
+
 /* Roboto Bold */
 @font-face {
-  font-family: 'Roboto';
-  src: url(font/Roboto-Bold.ttf);
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Roboto';
+	src: url(font/Roboto-Bold.ttf);
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
 }
+
 /* Roboto Bold Italic */
 @font-face {
-  font-family: 'Roboto';
-  src: url(font/Roboto-BoldItalic.html);
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Roboto';
+	src: url(font/Roboto-BoldItalic.html);
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
 }
+
 /* Roboto Italic */
 @font-face {
-  font-family: 'Roboto';
-  src: url(font/Roboto-Italic.html);
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Roboto';
+	src: url(font/Roboto-Italic.html);
+	font-style: italic;
+	font-display: swap;
 }
+
 /* Roboto Light */
 @font-face {
-  font-family: 'Roboto';
-  src: url(font/Roboto-Light.html);
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Roboto';
+	src: url(font/Roboto-Light.html);
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
 }
+
 /* Roboto Light Italic */
 @font-face {
-  font-family: 'Roboto';
-  src: url(font/Roboto-LightItalic.html);
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Roboto';
+	src: url(font/Roboto-LightItalic.html);
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
 }
+
 /* Roboto Medium */
 @font-face {
-  font-family: 'Roboto';
-  src: url(font/Roboto-Medium.ttf);
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Roboto';
+	src: url(font/Roboto-Medium.ttf);
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
 }
+
 /* Roboto Medium Italic */
 @font-face {
-  font-family: 'Roboto';
-  src: url(font/Roboto-MediumItalic.html);
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Roboto';
+	src: url(font/Roboto-MediumItalic.html);
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
 }
+
 /* Roboto Regular */
 @font-face {
-  font-family: 'Roboto';
-  src: url(font/Roboto-Regular.ttf);
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Roboto';
+	src: url(font/Roboto-Regular.ttf);
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
+
 /* Roboto Thin */
 @font-face {
-  font-family: 'Roboto';
-  src: url(font/Roboto-Thin.html);
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Roboto';
+	src: url(font/Roboto-Thin.html);
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
 }
+
 /* Roboto Thin Italic */
 @font-face {
-  font-family: 'Roboto';
-  src: url(font/Roboto-ThinItalic.html);
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Roboto';
+	src: url(font/Roboto-ThinItalic.html);
+	font-weight: 100;
+	font-style: italic;
+	font-display: swap;
 }
+
 .coverlink {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
 }
+
 .loading {
-  color: #666;
-  text-align: center;
-  font-size: 16px;
-  line-height: 28px;
-  margin-top: 20px;
+	color: #666;
+	text-align: center;
+	font-size: 16px;
+	line-height: 28px;
+	margin-top: 20px;
 }
+
 .appsModuleTitle {
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	margin-bottom: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
+
 .appsModuleTitle .apptitle {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  word-break: break-all;
-  color: #1A1A1A;
-  font-family: "Poppins", sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	word-break: break-all;
+	color: #1A1A1A;
+	font-family: "Poppins", sans-serif;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 30px;
 }
+
 .appsModuleTitle .more {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
+
 .appsModuleTitle .more .icon {
-  width: 16px;
-  height: 24px;
-  flex-shrink: 0;
+	width: 16px;
+	height: 24px;
+	flex-shrink: 0;
 }
+
 .pageTitle {
-  color: #1A1A1A;
-  font-family: "Poppins", sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 30px;
-  margin-bottom: 16px;
+	color: #1A1A1A;
+	font-family: "Poppins", sans-serif;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 30px;
+	margin-bottom: 16px;
 }
+
 .breadCrumbs {
-  margin: 16px auto;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  word-break: break-all;
+	margin: 16px auto;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	word-break: break-all;
 }
+
 .breadCrumbs .crumbs {
-  color: #1A1A1A;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
+	color: #1A1A1A;
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
 }
+
 .breadCrumbs .icon {
-  flex-shrink: 0;
-  margin: 0 8px;
-  color: #999;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 14px;
+	flex-shrink: 0;
+	margin: 0 8px;
+	color: #999;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 14px;
 }
+
 .breadCrumbs .crumbsNow {
-  color: #0186FF;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 22px;
+	color: #0186FF;
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 22px;
 }
+
 /* 设置广告标题、高度 */
 .adTitle {
-  font-size: 12px;
-  line-height: 14px;
-  margin: 3px 0 6px 0;
-  color: #ccc;
-  text-align: start;
-  font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	margin: 3px 0 6px 0;
+	color: #ccc;
+	text-align: start;
+	font-family: 'Roboto', sans-serif;
 }
+
 .adsHeight {
-  width: 100%;
-  height: 252px;
+	width: 100%;
+	height: 252px;
 }
+
 @media (min-width: 356px) {
-  .adsHeight {
-    width: 100%;
-    height: 312px;
-  }
-  .ad-box {
-    text-align: center;
-    margin: 12px 0;
-  }
+	.adsHeight {
+		width: 100%;
+		height: 312px;
+	}
+
+	.ad-box {
+		text-align: center;
+		margin: 12px 0;
+	}
 }
+
 @media (min-width: 748px) {
-  .adsHeight {
-    width: 100%;
-    height: 280px;
-    margin: 20px 0;
-  }
-  .ad-box {
-    text-align: center;
-    margin: 12px 0;
-  }
+	.adsHeight {
+		width: 100%;
+		height: 280px;
+		margin: 20px 0;
+	}
+
+	.ad-box {
+		text-align: center;
+		margin: 12px 0;
+	}
 }
+
 .wrap {
-  min-height: 90vh;
+	min-height: 90vh;
 }
+
 .wrap .indexWrap {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 32px 24px 50px 24px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 32px 24px 50px 24px;
 }
+
 /* 响应式布局 */
 @media only screen and (max-width: 320px) {
-  .wrap .indexWrap {
-    padding: 16px 16px 32px 16px;
-  }
-  .wrap .indexWrap .appsModuleTitle {
-    margin-bottom: 16px;
-  }
-  .wrap .indexWrap .appsModuleTitle .apptitle {
-    font-size: 20px;
-    line-height: 28px;
-  }
-  .wrap .indexWrap .pageTitle {
-    font-size: 20px;
-    line-height: 28px;
-  }
+	.wrap .indexWrap {
+		padding: 16px 16px 32px 16px;
+	}
+
+	.wrap .indexWrap .appsModuleTitle {
+		margin-bottom: 16px;
+	}
+
+	.wrap .indexWrap .appsModuleTitle .apptitle {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.wrap .indexWrap .pageTitle {
+		font-size: 20px;
+		line-height: 28px;
+	}
 }
+
 @media only screen and (min-width: 321px) and (max-width: 767px) {
-  .wrap .indexWrap {
-    padding: 16px 16px 32px 16px;
-  }
-  .wrap .indexWrap .appsModuleTitle {
-    margin-bottom: 16px;
-  }
-  .wrap .indexWrap .appsModuleTitle .apptitle {
-    font-size: 20px;
-    line-height: 28px;
-  }
-  .wrap .indexWrap .pageTitle {
-    font-size: 20px;
-    line-height: 28px;
-  }
+	.wrap .indexWrap {
+		padding: 16px 16px 32px 16px;
+	}
+
+	.wrap .indexWrap .appsModuleTitle {
+		margin-bottom: 16px;
+	}
+
+	.wrap .indexWrap .appsModuleTitle .apptitle {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.wrap .indexWrap .pageTitle {
+		font-size: 20px;
+		line-height: 28px;
+	}
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1366px) and (orientation: portrait) {
-  .wrap .indexWrap {
-    padding: 16px 16px 32px 16px;
-  }
-  .wrap .indexWrap .appsModuleTitle {
-    margin-bottom: 16px;
-  }
-  .wrap .indexWrap .appsModuleTitle .apptitle {
-    font-size: 20px;
-    line-height: 28px;
-  }
+	.wrap .indexWrap {
+		padding: 16px 16px 32px 16px;
+	}
+
+	.wrap .indexWrap .appsModuleTitle {
+		margin-bottom: 16px;
+	}
+
+	.wrap .indexWrap .appsModuleTitle .apptitle {
+		font-size: 20px;
+		line-height: 28px;
+	}
 }
+
 .realTimeSearchList {
-  width: 100%;
-  position: absolute;
-  right: 0;
-  top: 46px;
-  z-index: 2;
-  background: #FFF;
+	width: 100%;
+	position: absolute;
+	right: 0;
+	top: 46px;
+	z-index: 2;
+	background: #FFF;
 }
+
 .realTimeSearchList .realTimeList {
-  background: #FFF;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1), 0px 2px 14px 0px rgba(0, 0, 0, 0.1);
+	background: #FFF;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1), 0px 2px 14px 0px rgba(0, 0, 0, 0.1);
 }
+
 .realTimeSearchList .realTimeList .itemSearchCont {
-  width: 100%;
+	width: 100%;
 }
+
 .realTimeSearchList .realTimeList .itemSearchCont .itemSearchLink {
-  display: block;
-  width: 100%;
-  padding: 10px 16px;
+	display: block;
+	width: 100%;
+	padding: 10px 16px;
 }
+
 .realTimeSearchList .realTimeList .itemSearchCont .itemSearchLink .itemSearchText {
-  color: #666;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
+	color: #666;
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
 }
+
 .realTimeSearchList .realTimeList .itemSearchCont:hover .itemSearchLink {
-  background: #F5F5F5;
+	background: #F5F5F5;
 }
+
 .realTimeSearchList .realTimeList .itemSearchCont:last-child .itemSearchLink {
-  border-bottom: none;
+	border-bottom: none;
 }
+
 @media only screen and (min-width: 767px) {
-  .realTimeSearchList {
-    border-radius: 20px;
-  }
-  .realTimeSearchList .realTimeList {
-    border-radius: 20px;
-  }
+	.realTimeSearchList {
+		border-radius: 20px;
+	}
+
+	.realTimeSearchList .realTimeList {
+		border-radius: 20px;
+	}
 }
+
 button {
-  margin: 0px;
-  padding: 0px;
-  /*自定义边框*/
-  border: 0px;
-  /*消除默认点击蓝色边框效果*/
-  outline: none;
+	margin: 0px;
+	padding: 0px;
+	/*自定义边框*/
+	border: 0px;
+	/*消除默认点击蓝色边框效果*/
+	outline: none;
 }
+
 input {
-  border: 0px;
-  outline: none;
+	border: 0px;
+	outline: none;
 }
+
 .headWrap {
-  background: #FFF;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+	background: #FFF;
+	box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+	z-index: 1;
 }
+
 .headWrap .header {
-  max-width: 1200px;
-  height: 100%;
-  margin: auto;
+	max-width: 1200px;
+	height: 100%;
+	margin: auto;
 }
+
 .headWrap .header .mantle {
-  display: none;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.3);
-  top: 0;
-  left: 0;
-  z-index: 11;
-  width: 100%;
-  height: 100vh;
-  opacity: 0.7;
+	display: none;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.3);
+	top: 0;
+	left: 0;
+	z-index: 11;
+	width: 100%;
+	height: 100vh;
+	opacity: 0.7;
 }
+
 .headWrap .header .top {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	position: relative;
 }
+
 .headWrap .header .top .topL {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
+
 .headWrap .header .top .topL .showBtn {
-  cursor: pointer;
-  z-index: 1;
-  line-height: 100%;
+	cursor: pointer;
+	z-index: 1;
+	line-height: 100%;
 }
+
 .headWrap .header .top .topL .apk-logo .logo img {
-  aspect-ratio: 294 / 55;
+	aspect-ratio: 294 / 55;
 }
+
 .headWrap .header .top .topL .topList {
-  display: none;
+	display: none;
 }
+
 .headWrap .header .top .topR {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  z-index: 6 !important;
-  position: relative;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	z-index: 6 !important;
+	position: relative;
 }
+
 .headWrap .header .top .topR .changeLanguageBox {
-  height: 100%;
-  position: relative;
+	height: 100%;
+	position: relative;
 }
+
 .headWrap .header .top .topR .changeLanguageBox .currentLanguage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
 }
+
 .headWrap .header .top .topR .changeLanguageBox .currentLanguage .langIcon {
-  width: 24px;
-  height: 24px;
+	width: 24px;
+	height: 24px;
 }
+
 .headWrap .header .top .topR .changeLanguageBox .moreLanguage {
-  display: none;
-  width: max-content;
-  position: absolute;
-  top: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 24px;
-  border-radius: 12px;
-  background: #FFF;
-  box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.1), 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+	display: none;
+	width: max-content;
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 24px;
+	border-radius: 12px;
+	background: #FFF;
+	box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.1), 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
 }
+
 .headWrap .header .top .topR .changeLanguageBox .moreLanguage .itemLanguage {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
+
 .headWrap .header .top .topR .changeLanguageBox .moreLanguage .itemLanguage .itemCover {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
+
 .headWrap .header .top .topR .changeLanguageBox .moreLanguage .itemLanguage .itemCover .langIcon {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
 }
+
 .headWrap .header .top .topR .changeLanguageBox .moreLanguage .itemLanguage .itemCover .language {
-  color: #1A1A1A;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
+	color: #1A1A1A;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
 }
+
 .headWrap .header .top .topR .changeLanguageBox .moreLanguage .itemLanguage:hover .itemCover .language {
-  color: #0186FF;
-  font-weight: 500;
+	color: #0186FF;
+	font-weight: 500;
 }
+
 .headWrap .header .top .topR .changeLanguageBox .moreLanguage .itemLanguage:last-child {
-  margin-bottom: 0px;
+	margin-bottom: 0px;
 }
+
 .headWrap .header .top .topR .changeLanguageBox:hover .moreLanguage {
-  display: block;
+	display: block;
 }
+
 .headWrap .header .top .topR .search {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  background: #FFF;
-  border-radius: 20px;
-  border: 1px solid #E2E2E2;
-  padding: 0 16px;
-  margin: 0 16px;
+	display: flex;
+	align-items: center;
+	height: 40px;
+	background: #FFF;
+	border-radius: 20px;
+	border: 1px solid #E2E2E2;
+	padding: 0 16px;
+	margin: 0 16px;
 }
+
 .headWrap .header .top .topR .search .searchIcon {
-  background: #FFF;
-  padding-left: 10px;
+	background: #FFF;
+	padding-left: 10px;
 }
+
 .headWrap .header .top .topR .search .searchInput {
-  flex: 1;
-  height: 100%;
-  background: #FFF;
-  border-radius: 8px;
+	flex: 1;
+	height: 100%;
+	background: #FFF;
+	border-radius: 8px;
 }
+
 .headWrap .header .top .topR .search .clearResp {
-  display: none;
-  padding-left: 10px;
+	display: none;
+	padding-left: 10px;
 }
+
 .headWrap .header .mhead {
-  width: 100%;
-  height: 48px;
+	width: 100%;
+	height: 48px;
 }
+
 .headWrap .header .mhead .mheadcont {
-  height: 100%;
+	height: 100%;
 }
+
 .headWrap .header .mhead .mheadcont .mheadBox {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
+
 .headWrap .header .mhead .mheadcont .mheadBox .showBtn {
-  cursor: pointer;
-  z-index: 1;
-  line-height: 100%;
+	cursor: pointer;
+	z-index: 1;
+	line-height: 100%;
 }
+
 .headWrap .header .mhead .mheadcont .mheadBox .showBtn svg {
-  width: 24px;
-  height: 24px;
+	width: 24px;
+	height: 24px;
 }
+
 .headWrap .header .mhead .mheadcont .mheadBox .logo {
-  display: inline-block;
+	display: inline-block;
 }
+
 .headWrap .header .mhead .mheadcont .mheadBox .logo .logoIcon {
-  width: auto;
-  height: 30px;
-  aspect-ratio: 294 / 55;
+	width: auto;
+	height: 30px;
+	aspect-ratio: 294 / 55;
 }
+
 .headWrap .header .mhead .mHeadSearch {
-  display: none;
-  height: 100%;
+	display: none;
+	height: 100%;
 }
+
 .headWrap .header .mhead .mHeadSearch .searchBox {
-  height: 100%;
-  display: flex;
-  align-items: center;
+	height: 100%;
+	display: flex;
+	align-items: center;
 }
+
 .headWrap .header .mhead .mHeadSearch .searchBox .back {
-  line-height: 100%;
+	line-height: 100%;
 }
+
 .headWrap .header .mhead .mHeadSearch .searchBox .mSearch {
-  padding: 0 8px 0 16px;
-  height: 36px;
-  width: 100%;
-  border-radius: 18px;
-  background: #F5F5F5;
-  margin-left: 16px;
-  display: flex;
-  align-items: center;
+	padding: 0 8px 0 16px;
+	height: 36px;
+	width: 100%;
+	border-radius: 18px;
+	background: #F5F5F5;
+	margin-left: 16px;
+	display: flex;
+	align-items: center;
 }
+
 .headWrap .header .mhead .mHeadSearch .searchBox .mSearch .searchIcon {
-  background: #F5F5F5;
-  padding-left: 10px;
+	background: #F5F5F5;
+	padding-left: 10px;
 }
+
 .headWrap .header .mhead .mHeadSearch .searchBox .mSearch .searchInput {
-  height: 100%;
-  width: 100%;
-  background: #F5F5F5;
-  color: #999;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+	height: 100%;
+	width: 100%;
+	background: #F5F5F5;
+	color: #999;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 }
+
 .headWrap .header .mhead .mHeadSearch .searchBox .clearResp {
-  display: none;
-  padding-left: 10px;
+	display: none;
+	padding-left: 10px;
 }
+
 .headWrap .header .siderbar {
-  display: none;
-  box-sizing: border-box;
-  z-index: 200;
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: auto;
-  width: 100%;
-  background: #ffffff;
-  overflow-y: scroll;
-  padding: 0 16px 32px 16px;
-  transition: all ease 0.25s;
+	display: none;
+	box-sizing: border-box;
+	z-index: 200;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: auto;
+	width: 100%;
+	background: #ffffff;
+	overflow-y: scroll;
+	padding: 0 16px 32px 16px;
+	transition: all ease 0.25s;
 }
+
 .headWrap .header .siderbar .closeBtn {
-  height: 50px;
-  display: flex;
-  align-items: center;
-  position: relative;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	position: relative;
 }
+
 .headWrap .header .siderbar .closeBtn .closeBtnImg {
-  width: 24px;
-  height: 24px;
+	width: 24px;
+	height: 24px;
 }
+
 .headWrap .header .siderbar .closeBtn .sidebarLogo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: auto;
 }
+
 .headWrap .header .siderbar .closeBtn .sidebarLogo img {
-  height: 30px;
-  width: auto;
+	height: 30px;
+	width: auto;
 }
+
 .headWrap .header .siderbar .sideList {
-  width: 100%;
-  margin: 16px 0 32px 0;
-  display: grid;
-  grid-gap: 10px 10px;
-  grid-template-columns: repeat(2, calc((100% - 10px) / 2));
+	width: 100%;
+	margin: 16px 0 32px 0;
+	display: grid;
+	grid-gap: 10px 10px;
+	grid-template-columns: repeat(2, calc((100% - 10px) / 2));
 }
+
 .headWrap .header .siderbar .sideList .sideItem {
-  width: 100%;
-  border-radius: 8px;
-  border: 1px solid #E4E4E4;
+	width: 100%;
+	border-radius: 8px;
+	border: 1px solid #E4E4E4;
 }
+
 .headWrap .header .siderbar .sideList .sideItem a {
-  width: 100%;
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	width: 100%;
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+
 .headWrap .header .siderbar .sideList .sideItem a .icon {
-  width: 24px;
-  height: 24px;
+	width: 24px;
+	height: 24px;
 }
+
 .headWrap .header .siderbar .sideList .sideItem a .title {
-  color: #1A1A1A;
-  font-family: Poppins;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
+	color: #1A1A1A;
+	font-family: Poppins;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
 }
+
 .headWrap .header .siderbar .sideList .sideItem:hover a .title {
-  color: #0186FF;
-  font-weight: 500;
+	color: #0186FF;
+	font-weight: 500;
 }
+
 .headWrap .header .siderbar .sidelLnguage {
-  width: 100%;
+	width: 100%;
 }
+
 .headWrap .header .siderbar .sidelLnguage .languageTit {
-  color: #666;
-  font-family: Poppins;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 22px;
-  margin-bottom: 10px;
+	color: #666;
+	font-family: Poppins;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 22px;
+	margin-bottom: 10px;
 }
+
 .headWrap .header .siderbar .sidelLnguage .languageList {
-  display: grid;
-  grid-gap: 10px 10px;
-  grid-template-columns: repeat(2, calc((100% - 10px) / 2));
+	display: grid;
+	grid-gap: 10px 10px;
+	grid-template-columns: repeat(2, calc((100% - 10px) / 2));
 }
+
 .headWrap .header .siderbar .sidelLnguage .languageList .itemLanguage {
-  border-radius: 6px;
-  border: 1px solid #E4E4E4;
+	border-radius: 6px;
+	border: 1px solid #E4E4E4;
 }
+
 .headWrap .header .siderbar .sidelLnguage .languageList .itemLanguage .itemCover {
-  padding: 10px;
-  display: flex;
-  align-items: center;
+	padding: 10px;
+	display: flex;
+	align-items: center;
 }
+
 .headWrap .header .siderbar .sidelLnguage .languageList .itemLanguage .itemCover .langIcon {
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
-  margin-right: 10px;
+	width: 24px;
+	height: 24px;
+	flex-shrink: 0;
+	margin-right: 10px;
 }
+
 .headWrap .header .siderbar .sidelLnguage .languageList .itemLanguage .itemCover .language {
-  color: #1A1A1A;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
+	color: #1A1A1A;
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
 }
+
 .headWrap .header .siderbar .sidelLnguage .languageList .itemLanguage:hover .itemCover .language {
-  color: #0186FF;
-  font-weight: 500;
+	color: #0186FF;
+	font-weight: 500;
 }
+
 @media only screen and (max-width: 767px) {
-  .headWrap {
-    height: 46px;
-    padding: 0 16px;
-  }
-  .headWrap .header .top {
-    display: none;
-  }
+	.headWrap {
+		height: 46px;
+		padding: 0 16px;
+	}
+
+	.headWrap .header .top {
+		display: none;
+	}
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .headWrap {
-    height: 65px;
-  }
-  .headWrap .header .top {
-    padding: 0 16px;
-    height: 100%;
-    justify-content: space-between;
-  }
-  .headWrap .header .top .topL {
-    height: 100%;
-  }
-  .headWrap .header .top .topL .showBtn {
-    display: none;
-  }
-  .headWrap .header .top .topL .apk-logo .logo img {
-    height: 30px;
-    width: auto;
-  }
-  .headWrap .header .top .topL .topList {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    margin-left: 10px;
-  }
-  .headWrap .header .top .topL .topList .topItem {
-    height: 100%;
-  }
-  .headWrap .header .top .topL .topList .topItem .item {
-    cursor: pointer;
-    margin-right: 10px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin-left: 10px;
-  }
-  .headWrap .header .top .topL .topList .topItem .item .topTitle {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-    color: #1A1A1A;
-    margin-left: 5px;
-  }
-  .headWrap .header .top .topL .topList .topItem .item .underline {
-    width: 30px;
-    height: 6px;
-    margin: auto;
-    background-color: #fff;
-    border-radius: 4px;
-    position: absolute;
-    bottom: 0;
-  }
-  .headWrap .header .mhead {
-    display: none;
-  }
+	.headWrap {
+		height: 65px;
+	}
+
+	.headWrap .header .top {
+		padding: 0 16px;
+		height: 100%;
+		justify-content: space-between;
+	}
+
+	.headWrap .header .top .topL {
+		height: 100%;
+	}
+
+	.headWrap .header .top .topL .showBtn {
+		display: none;
+	}
+
+	.headWrap .header .top .topL .apk-logo .logo img {
+		height: 30px;
+		width: auto;
+	}
+
+	.headWrap .header .top .topL .topList {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		margin-left: 10px;
+	}
+
+	.headWrap .header .top .topL .topList .topItem {
+		height: 100%;
+	}
+
+	.headWrap .header .top .topL .topList .topItem .item {
+		cursor: pointer;
+		margin-right: 10px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		margin-left: 10px;
+	}
+
+	.headWrap .header .top .topL .topList .topItem .item .topTitle {
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 19px;
+		text-align: center;
+		color: #1A1A1A;
+		margin-left: 5px;
+	}
+
+	.headWrap .header .top .topL .topList .topItem .item .underline {
+		width: 30px;
+		height: 6px;
+		margin: auto;
+		background-color: #fff;
+		border-radius: 4px;
+		position: absolute;
+		bottom: 0;
+	}
+
+	.headWrap .header .mhead {
+		display: none;
+	}
 }
+
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
-  .headWrap {
-    height: 66px;
-  }
-  .headWrap .header .top {
-    padding: 0 24px;
-    height: 100%;
-    justify-content: space-between;
-  }
-  .headWrap .header .top .topL {
-    height: 100%;
-  }
-  .headWrap .header .top .topL .showBtn {
-    display: none;
-  }
-  .headWrap .header .top .topL .apk-logo .logo img {
-    width: auto;
-    height: 35px;
-  }
-  .headWrap .header .top .topL .topList {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    margin-left: 10px;
-  }
-  .headWrap .header .top .topL .topList .topItem {
-    height: 100%;
-  }
-  .headWrap .header .top .topL .topList .topItem .item {
-    cursor: pointer;
-    margin-right: 10px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin-left: 10px;
-  }
-  .headWrap .header .top .topL .topList .topItem .item .topTitle {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #1A1A1A;
-    margin-left: 5px;
-  }
-  .headWrap .header .top .topL .topList .topItem .item .underline {
-    width: 30px;
-    height: 6px;
-    margin: auto;
-    background-color: #fff;
-    border-radius: 4px;
-    position: absolute;
-    bottom: 0;
-  }
-  .headWrap .header .mhead {
-    display: none;
-  }
+	.headWrap {
+		height: 66px;
+	}
+
+	.headWrap .header .top {
+		padding: 0 24px;
+		height: 100%;
+		justify-content: space-between;
+	}
+
+	.headWrap .header .top .topL {
+		height: 100%;
+	}
+
+	.headWrap .header .top .topL .showBtn {
+		display: none;
+	}
+
+	.headWrap .header .top .topL .apk-logo .logo img {
+		width: auto;
+		height: 35px;
+	}
+
+	.headWrap .header .top .topL .topList {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		margin-left: 10px;
+	}
+
+	.headWrap .header .top .topL .topList .topItem {
+		height: 100%;
+	}
+
+	.headWrap .header .top .topL .topList .topItem .item {
+		cursor: pointer;
+		margin-right: 10px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		margin-left: 10px;
+	}
+
+	.headWrap .header .top .topL .topList .topItem .item .topTitle {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 19px;
+		text-align: center;
+		color: #1A1A1A;
+		margin-left: 5px;
+	}
+
+	.headWrap .header .top .topL .topList .topItem .item .underline {
+		width: 30px;
+		height: 6px;
+		margin: auto;
+		background-color: #fff;
+		border-radius: 4px;
+		position: absolute;
+		bottom: 0;
+	}
+
+	.headWrap .header .mhead {
+		display: none;
+	}
 }
+
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
-  .headWrap {
-    height: 66px;
-  }
-  .headWrap .header .top {
-    height: 100%;
-    padding: 0 24px;
-    justify-content: space-between;
-  }
-  .headWrap .header .top .showBtn {
-    display: none;
-  }
-  .headWrap .header .top .topL {
-    height: 100%;
-  }
-  .headWrap .header .top .topL .apk-logo .logo img {
-    width: auto;
-    height: 35px;
-  }
-  .headWrap .header .top .topL .topList {
-    margin-left: 50px;
-    display: flex;
-    align-items: center;
-    height: 100%;
-  }
-  .headWrap .header .top .topL .topList .topItem {
-    height: 100%;
-  }
-  .headWrap .header .top .topL .topList .topItem .item {
-    cursor: pointer;
-    margin-right: 30px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  .headWrap .header .top .topL .topList .topItem .item .topTitle {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-    text-align: center;
-    color: #1A1A1A;
-    margin-left: 10px;
-  }
-  .headWrap .header .top .topL .topList .topItem .item .underline {
-    width: 30px;
-    height: 6px;
-    margin: auto;
-    background-color: #fff;
-    border-radius: 4px;
-    position: absolute;
-    bottom: 0;
-  }
-  .headWrap .header .top .topR .changeLanguageBox .moreLanguage {
-    left: auto;
-    right: 0;
-    transform: none;
-  }
-  .headWrap .header .top .topR .search {
-    width: 260px;
-  }
-  .headWrap .header .mhead {
-    display: none;
-  }
+	.headWrap {
+		height: 66px;
+	}
+
+	.headWrap .header .top {
+		height: 100%;
+		padding: 0 24px;
+		justify-content: space-between;
+	}
+
+	.headWrap .header .top .showBtn {
+		display: none;
+	}
+
+	.headWrap .header .top .topL {
+		height: 100%;
+	}
+
+	.headWrap .header .top .topL .apk-logo .logo img {
+		width: auto;
+		height: 35px;
+	}
+
+	.headWrap .header .top .topL .topList {
+		margin-left: 50px;
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+
+	.headWrap .header .top .topL .topList .topItem {
+		height: 100%;
+	}
+
+	.headWrap .header .top .topL .topList .topItem .item {
+		cursor: pointer;
+		margin-right: 30px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+
+	.headWrap .header .top .topL .topList .topItem .item .topTitle {
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 20px;
+		text-align: center;
+		color: #1A1A1A;
+		margin-left: 10px;
+	}
+
+	.headWrap .header .top .topL .topList .topItem .item .underline {
+		width: 30px;
+		height: 6px;
+		margin: auto;
+		background-color: #fff;
+		border-radius: 4px;
+		position: absolute;
+		bottom: 0;
+	}
+
+	.headWrap .header .top .topR .changeLanguageBox .moreLanguage {
+		left: auto;
+		right: 0;
+		transform: none;
+	}
+
+	.headWrap .header .top .topR .search {
+		width: 260px;
+	}
+
+	.headWrap .header .mhead {
+		display: none;
+	}
 }
+
 @media screen and (min-width: 1367px) {
-  .headWrap {
-    height: 66px;
-  }
-  .headWrap .header .top {
-    height: 66px;
-    padding: 0px 24px;
-    justify-content: space-between;
-  }
-  .headWrap .header .top .showBtn {
-    display: none;
-  }
-  .headWrap .header .top .topL {
-    height: 100%;
-  }
-  .headWrap .header .top .topL .apk-logo .logo img {
-    width: auto;
-    height: 35px;
-  }
-  .headWrap .header .top .topL .topList {
-    margin-left: 145.5px;
-    display: flex;
-    align-items: center;
-    height: 100%;
-  }
-  .headWrap .header .top .topL .topList .topItem {
-    height: 100%;
-  }
-  .headWrap .header .top .topL .topList .topItem .item {
-    cursor: pointer;
-    margin-right: 16px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  .headWrap .header .top .topL .topList .topItem .item .topTitle {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-    text-align: center;
-    color: #1A1A1A;
-    padding: 12px 10px;
-  }
-  .headWrap .header .top .topL .topList .topItem:hover .item .topTitle {
-    border-radius: 24px;
-    background: #F5F5F5;
-  }
-  .headWrap .header .top .topR .search {
-    width: 260px;
-  }
-  .headWrap .header .mhead {
-    display: none;
-  }
+	.headWrap {
+		height: 66px;
+	}
+
+	.headWrap .header .top {
+		height: 66px;
+		padding: 0px 24px;
+		justify-content: space-between;
+	}
+
+	.headWrap .header .top .showBtn {
+		display: none;
+	}
+
+	.headWrap .header .top .topL {
+		height: 100%;
+	}
+
+	.headWrap .header .top .topL .apk-logo .logo img {
+		width: auto;
+		height: 35px;
+	}
+
+	.headWrap .header .top .topL .topList {
+		margin-left: 145.5px;
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+
+	.headWrap .header .top .topL .topList .topItem {
+		height: 100%;
+	}
+
+	.headWrap .header .top .topL .topList .topItem .item {
+		cursor: pointer;
+		margin-right: 16px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+
+	.headWrap .header .top .topL .topList .topItem .item .topTitle {
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 20px;
+		text-align: center;
+		color: #1A1A1A;
+		padding: 12px 10px;
+	}
+
+	.headWrap .header .top .topL .topList .topItem:hover .item .topTitle {
+		border-radius: 24px;
+		background: #F5F5F5;
+	}
+
+	.headWrap .header .top .topR .search {
+		width: 260px;
+	}
+
+	.headWrap .header .mhead {
+		display: none;
+	}
 }
+
 .customTheme {
-  width: 100%;
-  color: #1A1A1A;
-  font-family: 'Roboto', sans-serif;
-  word-break: break-word;
-  padding: 10px 0;
+	width: 100%;
+	color: #1A1A1A;
+	font-family: 'Roboto', sans-serif;
+	word-break: break-word;
+	padding: 10px 0;
 }
+
 .customTheme h1 {
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 40px;
-  margin-top: 20px;
-  margin-bottom: 12px;
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 40px;
+	margin-top: 20px;
+	margin-bottom: 12px;
 }
+
 .customTheme h2 {
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 32px;
-  margin-top: 20px;
-  margin-bottom: 12px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 32px;
+	margin-top: 20px;
+	margin-bottom: 12px;
 }
+
 .customTheme h3 {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 26px;
-  margin-top: 12px;
-  margin-bottom: 12px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 26px;
+	margin-top: 12px;
+	margin-bottom: 12px;
 }
+
 .customTheme h4 {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  margin-top: 6px;
-  margin-bottom: 6px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	margin-top: 6px;
+	margin-bottom: 6px;
 }
+
 .customTheme p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-top: 0;
-  margin-bottom: 12px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-top: 0;
+	margin-bottom: 12px;
 }
+
 .customTheme img {
-  width: 100%;
-  border-radius: 10px;
+	width: 100%;
+	border-radius: 10px;
 }
+
 .customTheme .appCard {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #E4E4E4;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #E4E4E4;
 }
+
 .customTheme .appCard .appCardLeft {
-  padding-right: 20px;
-  display: flex;
-  flex-direction: column;
-  /* 垂直方向布局 */
-  justify-content: center;
-  /* 垂直方向居中 */
-  width: 100%;
+	padding-right: 20px;
+	display: flex;
+	flex-direction: column;
+	/* 垂直方向布局 */
+	justify-content: center;
+	/* 垂直方向居中 */
+	width: 100%;
 }
+
 .customTheme .appCard .appCardLeft .appCardLeftTop {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
+
 .customTheme .appCard .appCardLeft .appCardLeftTop .appCardLeftImg {
-  width: 72px;
-  height: 72px;
-  border-radius: 18%;
-  border: 1px solid #E4E4E4;
-  background: #FFF;
+	width: 72px;
+	height: 72px;
+	border-radius: 18%;
+	border: 1px solid #E4E4E4;
+	background: #FFF;
 }
+
 .customTheme .appCard .appCardLeft .appCardLeftTop .appCardLeftName {
-  margin-left: 16px;
+	margin-left: 16px;
 }
+
 .customTheme .appCard .appCardLeft .appCardLeftTop .appCardLeftName .appCardLeftItemName {
-  color: #1A1A1A;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 137%;
+	color: #1A1A1A;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 137%;
 }
+
 .customTheme .appCard .appCardLeft .appCardLeftTop .appCardLeftName .appCardLeftItemCategy {
-  color: #666;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
+	color: #666;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
 }
+
 .customTheme .appCard .appCardLeft .appCardLeftCent {
-  margin: 20px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+	margin: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
+
 .customTheme .appCard .appCardLeft .appCardLeftCent .itemLeftCentInfo {
-  flex-shrink: 0;
+	flex-shrink: 0;
 }
+
 .customTheme .appCard .appCardLeft .appCardLeftCent .itemLeftCentInfo .itemLeftCentInfoCont {
-  color: #1A1A1A;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 137%;
+	color: #1A1A1A;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 137%;
 }
+
 .customTheme .appCard .appCardLeft .appCardLeftCent .itemLeftCentInfo .itemLeftCentInfoTitle {
-  color: #666;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
+	color: #666;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
 }
+
 .customTheme .appCard .appCardLeft .appCardLeftCent .line {
-  width: 1.033px;
-  height: 30px;
-  background: #E6E6E6;
+	width: 1.033px;
+	height: 30px;
+	background: #E6E6E6;
 }
+
 .customTheme .appCard .appCardLeft .appCardLeftBottom {
-  padding: 20px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  border-radius: 16px;
-  border: 5px solid #278627;
-  background: radial-gradient(116.12% 61.84% at 1.28% 29.01%, rgba(108, 231, 108, 0.24) 99.74%, rgba(20, 164, 20, 0.8) 100%), linear-gradient(180deg, #24C224 2.55%, #169516 95.71%);
-  background-blend-mode: lighten, normal;
-  color: #FFF;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
-  font-family: Inter;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 100%;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	border-radius: 16px;
+	border: 5px solid #278627;
+	background: radial-gradient(116.12% 61.84% at 1.28% 29.01%, rgba(108, 231, 108, 0.24) 99.74%, rgba(20, 164, 20, 0.8) 100%), linear-gradient(180deg, #24C224 2.55%, #169516 95.71%);
+	background-blend-mode: lighten, normal;
+	color: #FFF;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+	font-family: Inter;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 100%;
 }
+
 .customTheme .appCard .appCardRight {
-  width: 50%;
-  flex-shrink: 0;
+	width: 50%;
+	flex-shrink: 0;
 }
+
 .customTheme .appCard .appCardRight .appCardRightImg {
-  width: 100%;
-  height: 201px;
-  border-radius: 8px;
-  background: #DDD;
-  box-shadow: 0px 1px 2px 0px rgba(37, 39, 44, 0.1), 0px 1px 3px 1px rgba(37, 39, 44, 0.08);
+	width: 100%;
+	height: 201px;
+	border-radius: 8px;
+	background: #DDD;
+	box-shadow: 0px 1px 2px 0px rgba(37, 39, 44, 0.1), 0px 1px 3px 1px rgba(37, 39, 44, 0.08);
 }
+
 .customTheme .appCard:hover .appCardLeft .appCardLeftBottom {
-  background: radial-gradient(83.78% 71.16% at 1.28% 28.83%, rgba(108, 231, 108, 0.24) 99.74%, rgba(20, 164, 20, 0.8) 100%), linear-gradient(180deg, #25CC25 2.55%, #18B918 95.71%);
+	background: radial-gradient(83.78% 71.16% at 1.28% 28.83%, rgba(108, 231, 108, 0.24) 99.74%, rgba(20, 164, 20, 0.8) 100%), linear-gradient(180deg, #25CC25 2.55%, #18B918 95.71%);
 }
+
 @media only screen and (max-width: 320px) {
-  .customTheme {
-    width: 100%;
-    color: #333333;
-    word-break: break-word;
-    padding: 10px 0;
-  }
-  .customTheme h1 {
-    font-size: 22px;
-    line-height: 30px;
-  }
-  .customTheme h2 {
-    font-size: 20px;
-    line-height: 28px;
-  }
-  .customTheme .appCard {
-    flex-direction: column;
-  }
-  .customTheme .appCard .appCardLeft {
-    padding-right: 0;
-  }
-  .customTheme .appCard .appCardLeft .appCardLeftBottom {
-    font-size: 30px;
-    padding: 10px 80px;
-  }
-  .customTheme .appCard .appCardRight {
-    margin-top: 20px;
-    width: 100%;
-  }
+	.customTheme {
+		width: 100%;
+		color: #333333;
+		word-break: break-word;
+		padding: 10px 0;
+	}
+
+	.customTheme h1 {
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	.customTheme h2 {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.customTheme .appCard {
+		flex-direction: column;
+	}
+
+	.customTheme .appCard .appCardLeft {
+		padding-right: 0;
+	}
+
+	.customTheme .appCard .appCardLeft .appCardLeftBottom {
+		font-size: 30px;
+		padding: 10px 80px;
+	}
+
+	.customTheme .appCard .appCardRight {
+		margin-top: 20px;
+		width: 100%;
+	}
 }
+
 @media only screen and (min-width: 321px) and (max-width: 767px) {
-  .customTheme {
-    width: 100%;
-    color: #333333;
-    word-break: break-word;
-    padding: 10px 0;
-  }
-  .customTheme h1 {
-    font-size: 22px;
-    line-height: 30px;
-  }
-  .customTheme h2 {
-    font-size: 20px;
-    line-height: 28px;
-  }
-  .customTheme .appCard {
-    flex-direction: column;
-  }
-  .customTheme .appCard .appCardLeft {
-    padding-right: 0;
-  }
-  .customTheme .appCard .appCardLeft .appCardLeftBottom {
-    font-size: 30px;
-    padding: 10px 80px;
-  }
-  .customTheme .appCard .appCardRight {
-    margin-top: 20px;
-    width: 100%;
-  }
+	.customTheme {
+		width: 100%;
+		color: #333333;
+		word-break: break-word;
+		padding: 10px 0;
+	}
+
+	.customTheme h1 {
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	.customTheme h2 {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.customTheme .appCard {
+		flex-direction: column;
+	}
+
+	.customTheme .appCard .appCardLeft {
+		padding-right: 0;
+	}
+
+	.customTheme .appCard .appCardLeft .appCardLeftBottom {
+		font-size: 30px;
+		padding: 10px 80px;
+	}
+
+	.customTheme .appCard .appCardRight {
+		margin-top: 20px;
+		width: 100%;
+	}
 }
+
 .banner {
-  position: relative;
-  margin-bottom: 40px;
+	position: relative;
+	margin-bottom: 40px;
 }
+
 .banner .slideBtn {
-  position: absolute;
-  top: 47%;
-  transform: translateY(-50%);
-  z-index: 5;
-  height: 36px;
-  width: 36px;
-  background-color: #FFFFFF;
-  border-radius: 50%;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), 0px 0px 2px rgba(0, 0, 0, 0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	position: absolute;
+	top: 47%;
+	transform: translateY(-50%);
+	z-index: 5;
+	height: 36px;
+	width: 36px;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), 0px 0px 2px rgba(0, 0, 0, 0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
 .banner .slideBtn:hover {
-  background-color: #DCDCDC;
+	background-color: #DCDCDC;
 }
+
 .banner .bannerCont {
-  overflow: hidden;
+	overflow: hidden;
 }
+
 .banner .bannerCont .bannerList {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
+
 .banner .bannerCont .bannerList .bannerItem {
-  flex-shrink: 0;
-  height: auto;
-  width: calc(100% / 3 - 18px);
-  position: relative;
-  border-radius: 12px;
-  padding: 0 8px;
+	flex-shrink: 0;
+	height: auto;
+	width: calc(100% / 3 - 18px);
+	position: relative;
+	border-radius: 12px;
+	padding: 0 8px;
 }
+
 .banner .bannerCont .bannerList .bannerItem .itemScreen {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
+
 .banner .bannerCont .bannerList .bannerItem .itemScreen .itemScreenImg {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 8px;
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 16 / 9;
+	border-radius: 8px;
 }
+
 .banner .bannerCont .bannerList .bannerItem .appDet {
-  min-height: 43px;
-  margin-top: 12px;
-  overflow: hidden;
-  color: #1A1A1A;
-  text-overflow: ellipsis;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 137%;
-  /* 21.92px */
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  flex: 1 0 0;
+	min-height: 43px;
+	margin-top: 12px;
+	overflow: hidden;
+	color: #1A1A1A;
+	text-overflow: ellipsis;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 137%;
+	/* 21.92px */
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	flex: 1 0 0;
 }
+
 @media only screen and (max-width: 767px) {
-  .banner {
-    margin-bottom: 28px;
-  }
-  .banner #slideRight {
-    display: none;
-  }
-  .banner .bannerCont {
-    margin-right: -16px;
-    margin-left: -16px;
-  }
-  .banner .bannerCont .bannerList {
-    padding-right: 16px;
-    padding-left: 16px;
-    overflow-x: scroll;
-  }
-  .banner .bannerCont .bannerList .bannerItem {
-    width: 92%;
-  }
+	.banner {
+		margin-bottom: 28px;
+	}
+
+	.banner #slideRight {
+		display: none;
+	}
+
+	.banner .bannerCont {
+		margin-right: -16px;
+		margin-left: -16px;
+	}
+
+	.banner .bannerCont .bannerList {
+		padding-right: 16px;
+		padding-left: 16px;
+		overflow-x: scroll;
+	}
+
+	.banner .bannerCont .bannerList .bannerItem {
+		width: 92%;
+	}
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .banner #slideRight {
-    right: 0px;
-  }
-  .banner #slideLeft {
-    left: 0px;
-  }
-  .banner .bannerCont .bannerList .bannerItem {
-    width: calc(100% / 3);
-  }
+	.banner #slideRight {
+		right: 0px;
+	}
+
+	.banner #slideLeft {
+		left: 0px;
+	}
+
+	.banner .bannerCont .bannerList .bannerItem {
+		width: calc(100% / 3);
+	}
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .banner #slideRight {
-    right: 0px;
-  }
-  .banner #slideLeft {
-    left: 0px;
-  }
-  .banner .bannerCont .bannerList .bannerItem {
-    width: calc(100% / 3);
-  }
+	.banner #slideRight {
+		right: 0px;
+	}
+
+	.banner #slideLeft {
+		left: 0px;
+	}
+
+	.banner .bannerCont .bannerList .bannerItem {
+		width: calc(100% / 3);
+	}
 }
+
 @media only screen and (min-width: 1200px) {
-  .banner #slideRight {
-    right: -16px;
-  }
-  .banner #slideLeft {
-    left: -16px;
-  }
-  .banner .bannerCont .bannerList .bannerItem {
-    width: calc(100% / 3);
-  }
+	.banner #slideRight {
+		right: -16px;
+	}
+
+	.banner #slideLeft {
+		left: -16px;
+	}
+
+	.banner .bannerCont .bannerList .bannerItem {
+		width: calc(100% / 3);
+	}
 }
+
 .frequentlyAsked {
-  margin-bottom: 40px;
+	margin-bottom: 40px;
 }
+
 .frequentlyAsked .frequentlyAskedTitle {
-  color: #1A1A1A;
-  font-family: "Poppins", sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 30px;
+	color: #1A1A1A;
+	font-family: "Poppins", sans-serif;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 30px;
 }
+
 .frequentlyAsked .frequentlyAskedCont .itemAsked {
-  border-radius: 8px;
-  background: #FFF;
-  border: 1px solid #E6E6E6;
-  margin-top: 12px;
+	border-radius: 8px;
+	background: #FFF;
+	border: 1px solid #E6E6E6;
+	margin-top: 12px;
 }
+
 .frequentlyAsked .frequentlyAskedCont .itemAsked .Question {
-  margin: 16px 16px 0 16px;
-  display: flex;
-  align-items: center;
-  padding-bottom: 16px;
-  font-family: 'Roboto', sans-serif;
+	margin: 16px 16px 0 16px;
+	display: flex;
+	align-items: center;
+	padding-bottom: 16px;
+	font-family: 'Roboto', sans-serif;
 }
+
 .frequentlyAsked .frequentlyAskedCont .itemAsked .Question .serialNum {
-  color: #1A1A1A;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
+	color: #1A1A1A;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
 }
+
 .frequentlyAsked .frequentlyAskedCont .itemAsked .Question .itemAskedText {
-  flex: 1;
-  margin-left: 5px;
-  color: #000;
-  font-size: 15px;
-  font-weight: 500;
+	flex: 1;
+	margin-left: 5px;
+	color: #000;
+	font-size: 15px;
+	font-weight: 500;
 }
+
 .frequentlyAsked .frequentlyAskedCont .itemAsked .Question .flagicon {
-  margin-left: auto;
-  align-items: center;
+	margin-left: auto;
+	align-items: center;
 }
+
 .frequentlyAsked .frequentlyAskedCont .itemAsked .Question .flagicon .flagImg {
-  width: 16px;
-  height: 16px;
+	width: 16px;
+	height: 16px;
 }
+
 .frequentlyAsked .frequentlyAskedCont .itemAsked .Answer {
-  display: none;
-  padding: 16px;
-  font-family: 'Roboto', sans-serif;
+	display: none;
+	padding: 16px;
+	font-family: 'Roboto', sans-serif;
 }
+
 .frequentlyAsked .frequentlyAskedCont .itemAsked .Answer .AnswerItemText {
-  color: #666;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
+	color: #666;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
 }
+
 @media only screen and (max-width: 767px) {
-  .frequentlyAsked {
-    margin-bottom: 28px;
-  }
-  .frequentlyAsked .frequentlyAskedTitle {
-    font-size: 20px;
-  }
+	.frequentlyAsked {
+		margin-bottom: 28px;
+	}
+
+	.frequentlyAsked .frequentlyAskedTitle {
+		font-size: 20px;
+	}
 }
+
 .sideAppList {
-  background: #FFFFFF;
+	background: #FFFFFF;
 }
+
 .sideAppList .topDownloadsTitle {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 16px;
 }
+
 .sideAppList .topDownloadsTitle .apptitle {
-  color: #1A1A1A;
-  font-family: "Poppins", sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 30px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  word-break: break-all;
+	color: #1A1A1A;
+	font-family: "Poppins", sans-serif;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	word-break: break-all;
 }
+
 .sideAppList .topDownloadsList {
-  width: 100%;
+	width: 100%;
 }
+
 .sideAppList .topDownloadsList .appItem {
-  position: relative;
-  width: 100%;
-  padding: 12px;
+	position: relative;
+	width: 100%;
+	padding: 12px;
 }
+
 .sideAppList .topDownloadsList .appItem .appCon {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
+
 .sideAppList .topDownloadsList .appItem .appCon .app-img {
-  margin-right: 12px;
+	margin-right: 12px;
 }
+
 .sideAppList .topDownloadsList .appItem .appCon .app-img img {
-  width: 78px;
-  height: 78px;
-  aspect-ratio: 1 / 1;
-  border-radius: 18%;
-  flex-shrink: 0;
-  box-shadow: 0px 1px 2px 0px rgba(37, 39, 44, 0.1), 0px 1px 3px 1px rgba(37, 39, 44, 0.08);
+	width: 78px;
+	height: 78px;
+	aspect-ratio: 1 / 1;
+	border-radius: 18%;
+	flex-shrink: 0;
+	box-shadow: 0px 1px 2px 0px rgba(37, 39, 44, 0.1), 0px 1px 3px 1px rgba(37, 39, 44, 0.08);
 }
+
 .sideAppList .topDownloadsList .appItem .appCon .app-info {
-  flex: 1;
-  position: relative;
+	flex: 1;
+	position: relative;
 }
+
 .sideAppList .topDownloadsList .appItem .appCon .app-info .app-info-tit {
-  color: #1A1A1A;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 137%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  word-break: break-all;
+	color: #1A1A1A;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 137%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	word-break: break-all;
 }
+
 .sideAppList .topDownloadsList .appItem .appCon .app-info .app-info-score {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
+
 .sideAppList .topDownloadsList .appItem .appCon .app-info .app-info-score .app-rating {
-  color: #666;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 137%;
-  margin-right: 4px;
+	color: #666;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 137%;
+	margin-right: 4px;
 }
+
 @media only screen and (min-width: 767px) {
-  .sideAppList .topDownloadsList .appItem:hover {
-    border-radius: 12px;
-    background: #F5F5F5;
-  }
+	.sideAppList .topDownloadsList .appItem:hover {
+		border-radius: 12px;
+		background: #F5F5F5;
+	}
 }
+
 @media only screen and (max-width: 767px) {
-  .sideAppList .topDownloadsTitle .apptitle {
-    font-size: 20px;
-    line-height: 28px;
-  }
-  .sideAppList .topDownloadsList {
-    padding: 0 6px;
-    display: grid;
-    grid-gap: 20px 20px;
-    grid-template-columns: repeat(3, calc((100% - 40px) / 3));
-  }
-  .sideAppList .topDownloadsList .appItem {
-    padding: 0px;
-  }
-  .sideAppList .topDownloadsList .appItem .appCon {
-    align-items: baseline;
-    flex-direction: column;
-  }
-  .sideAppList .topDownloadsList .appItem .appCon .app-img {
-    width: 100%;
-    margin: 0;
-  }
-  .sideAppList .topDownloadsList .appItem .appCon .app-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 18%;
-  }
-  .sideAppList .topDownloadsList .appItem .appCon .app-info .app-info-tit {
-    padding-top: 8px;
-  }
+	.sideAppList .topDownloadsTitle .apptitle {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.sideAppList .topDownloadsList {
+		padding: 0 6px;
+		display: grid;
+		grid-gap: 20px 20px;
+		grid-template-columns: repeat(3, calc((100% - 40px) / 3));
+	}
+
+	.sideAppList .topDownloadsList .appItem {
+		padding: 0px;
+	}
+
+	.sideAppList .topDownloadsList .appItem .appCon {
+		align-items: baseline;
+		flex-direction: column;
+	}
+
+	.sideAppList .topDownloadsList .appItem .appCon .app-img {
+		width: 100%;
+		margin: 0;
+	}
+
+	.sideAppList .topDownloadsList .appItem .appCon .app-img img {
+		width: 100%;
+		height: auto;
+		border-radius: 18%;
+	}
+
+	.sideAppList .topDownloadsList .appItem .appCon .app-info .app-info-tit {
+		padding-top: 8px;
+	}
 }
+
 .footerWrap {
-  background: #FFFFFF;
-  position: relative;
+	background: #FFFFFF;
+	position: relative;
+
 }
+
 .footerWrap .footer {
-  max-width: 1200px;
-  margin: 0 auto;
-  border-top: 1.5px solid #D9D9D9;
+	max-width: 1200px;
+	margin: 0 auto;
+
 }
+
 .footerWrap .footer .top .logo img {
-  width: auto;
-  height: 35px;
-  aspect-ratio: 294 / 55;
+	width: auto;
+	height: 35px;
+	aspect-ratio: 294 / 55;
 }
+
 .footerWrap .footer .top .socialMedia {
-  display: flex;
+	display: flex;
 }
+
 .footerWrap .footer .top .socialMedia .externalLinks {
-  display: inline-block;
+	display: inline-block;
 }
+
 .footerWrap .footer .tabbar a {
-  color: #666;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  margin-right: 32px;
+	color: #666;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+	margin-right: 32px;
 }
+
 .footerWrap .cookie-notice-container {
-  background-color: rgba(255, 255, 255, 0.5);
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  color: #6f6f6f;
-  text-align: center;
-  z-index: 999999;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+	background-color: rgba(255, 255, 255, 0.5);
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	color: #6f6f6f;
+	text-align: center;
+	z-index: 999999;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 }
+
 .footerWrap .cookie-notice-container .container {
-  max-width: 900px;
-  z-index: 2;
-  position: relative;
-  text-align: center;
-  padding: 10px;
-  padding-right: 100px;
-  margin: 0 auto;
+	max-width: 900px;
+	z-index: 2;
+	position: relative;
+	text-align: center;
+	padding: 10px;
+	padding-right: 100px;
+	margin: 0 auto;
 }
+
 .footerWrap .cookie-notice-container .container a,
 .footerWrap .cookie-notice-container .container button,
 .footerWrap .cookie-notice-container .container video {
-  -webkit-tap-highlight-color: transparent;
-  outline: 0;
-  text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+	outline: 0;
+	text-decoration: none;
 }
+
 .footerWrap .cookie-notice-container .container .moreJump {
-  color: #0186FF;
+	color: #0186FF;
 }
+
 .footerWrap .cookie-notice-container .container button {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translate(-8px, -50%);
-  display: block;
-  padding: 0 25px;
-  height: 30px;
-  line-height: 30px;
-  background: #0186FF;
-  border: none;
-  color: #fff;
-  margin: 0 auto;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
-  cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translate(-8px, -50%);
+	display: block;
+	padding: 0 25px;
+	height: 30px;
+	line-height: 30px;
+	background: #0186FF;
+	border: none;
+	color: #fff;
+	margin: 0 auto;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	cursor: pointer;
 }
+
 .footerWrap .cookie-notice-container:before {
-  content: '';
-  background-color: rgba(255, 255, 255, 0.3);
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.95;
-  z-index: -1;
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+	content: '';
+	background-color: rgba(255, 255, 255, 0.3);
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.95;
+	z-index: -1;
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
 }
+
 .footerWrap .addToScreenTip {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
-  width: 100%;
-  background-color: #0186FF;
-  border-radius: 1rem 1rem 0 0;
-  color: #fff;
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	background-color: #0186FF;
+	border-radius: 1rem 1rem 0 0;
+	color: #fff;
 }
+
 .footerWrap .addToScreenTip .tipTop {
-  padding: 1.6rem;
-  width: 100%;
-  border-bottom: 0.1rem solid #F5F5F5;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
+	padding: 1.6rem;
+	width: 100%;
+	border-bottom: 0.1rem solid #F5F5F5;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
 }
+
 .footerWrap .addToScreenTip .tipTop .tipTopLeft .tipTitle {
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 2rem;
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 2rem;
 }
+
 .footerWrap .addToScreenTip .tipTop .tipTopLeft .tipDetail {
-  line-height: 2rem;
-  font-size: 1.4rem;
+	line-height: 2rem;
+	font-size: 1.4rem;
 }
+
 .footerWrap .addToScreenTip .tipCont {
-  width: 100%;
-  margin: 1rem 0;
+	width: 100%;
+	margin: 1rem 0;
 }
+
 .footerWrap .addToScreenTip .tipBottom {
-  font-size: 1.4rem;
-  margin-bottom: 2rem;
-  text-align: center;
+	font-size: 1.4rem;
+	margin-bottom: 2rem;
+	text-align: center;
 }
+
 @media only screen and (max-width: 767px) {
-  .footerWrap .footer {
-    padding: 20px 16px;
-  }
-  .footerWrap .footer .top .logo img {
-    width: auto;
-    height: 30px;
-  }
-  .footerWrap .footer .top .socialMedia {
-    margin: 20px 0 32px 0;
-  }
-  .footerWrap .footer .top .socialMedia .externalLinks {
-    margin-right: 12px;
-  }
-  .footerWrap .footer .top .socialMedia .externalLinks svg {
-    width: 30px;
-    height: 30px;
-  }
-  .footerWrap .footer .tabbar {
-    display: grid;
-    grid-gap: 20px 10px;
-    grid-template-columns: repeat(2, calc((100% - 20px) / 2));
-  }
-  .footerWrap .footer .tabbar a {
-    font-size: 14px;
-    line-height: 22px;
-    margin-right: 0px;
-  }
-  .footerWrap .cookie-notice-container {
-    font-size: 14px;
-  }
-  .footerWrap .addToScreenTip .tipCont {
-    display: flex;
-    justify-content: center;
-  }
-  .footerWrap .addToScreenTip .tipCont .stepImg {
-    width: 50%;
-  }
-  .cookie-notice-container .container {
-    font-size: 12px;
-  }
+	.footerWrap .footer {
+		padding: 20px 16px;
+	}
+
+	.footerWrap .footer .top .logo img {
+		width: auto;
+		height: 30px;
+	}
+
+	.footerWrap .footer .top .socialMedia {
+		margin: 20px 0 32px 0;
+	}
+
+	.footerWrap .footer .top .socialMedia .externalLinks {
+		margin-right: 12px;
+	}
+
+	.footerWrap .footer .top .socialMedia .externalLinks svg {
+		width: 30px;
+		height: 30px;
+	}
+
+	.footerWrap .footer .tabbar {
+		display: grid;
+		grid-gap: 20px 10px;
+		grid-template-columns: repeat(2, calc((100% - 20px) / 2));
+	}
+
+	.footerWrap .footer .tabbar a {
+		font-size: 14px;
+		line-height: 22px;
+		margin-right: 0px;
+	}
+
+	.footerWrap .cookie-notice-container {
+		font-size: 14px;
+	}
+
+	.footerWrap .addToScreenTip .tipCont {
+		display: flex;
+		justify-content: center;
+	}
+
+	.footerWrap .addToScreenTip .tipCont .stepImg {
+		width: 50%;
+	}
+
+	.cookie-notice-container .container {
+		font-size: 12px;
+	}
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .footerWrap .footer {
-    padding: 20px 16px;
-  }
-  .footerWrap .footer .top {
-    display: flex;
-    align-items: center;
-    margin-bottom: 18px;
-  }
-  .footerWrap .footer .top .socialMedia {
-    margin-left: 50px;
-  }
-  .footerWrap .footer .top .socialMedia .externalLinks {
-    margin-right: 12px;
-  }
-  .footerWrap .footer .top .socialMedia .externalLinks svg {
-    width: 30px;
-    height: 30px;
-  }
-  .footerWrap .cookie-notice-container {
-    font-size: 1.4rem;
-  }
-  .footerWrap .addToScreenTip .tipCont {
-    display: flex;
-    justify-content: center;
-  }
-  .footerWrap .addToScreenTip .tipCont .stepImg {
-    width: 40%;
-  }
-  .cookie-notice-container .container {
-    font-size: 14px;
-  }
+	.footerWrap .footer {
+		padding: 20px 16px;
+	}
+
+	.footerWrap .footer .top {
+		display: flex;
+		align-items: center;
+		margin-bottom: 18px;
+	}
+
+	.footerWrap .footer .top .socialMedia {
+		margin-left: 50px;
+	}
+
+	.footerWrap .footer .top .socialMedia .externalLinks {
+		margin-right: 12px;
+	}
+
+	.footerWrap .footer .top .socialMedia .externalLinks svg {
+		width: 30px;
+		height: 30px;
+	}
+
+	.footerWrap .cookie-notice-container {
+		font-size: 1.4rem;
+	}
+
+	.footerWrap .addToScreenTip .tipCont {
+		display: flex;
+		justify-content: center;
+	}
+
+	.footerWrap .addToScreenTip .tipCont .stepImg {
+		width: 40%;
+	}
+
+	.cookie-notice-container .container {
+		font-size: 14px;
+	}
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .footerWrap .footer {
-    padding: 20px 24px;
-  }
-  .footerWrap .footer .top {
-    display: flex;
-    align-items: center;
-    margin-bottom: 18px;
-  }
-  .footerWrap .footer .top .socialMedia {
-    margin-left: 50px;
-  }
-  .footerWrap .footer .top .socialMedia .externalLinks {
-    margin-right: 12px;
-  }
-  .footerWrap .footer .top .socialMedia .externalLinks svg {
-    width: 30px;
-    height: 30px;
-  }
-  .footerWrap .cookie-notice-container {
-    font-size: 16px;
-  }
-  .footerWrap .addToScreenTip .tipCont {
-    display: flex;
-    justify-content: center;
-  }
-  .footerWrap .addToScreenTip .tipCont .stepImg {
-    width: 20%;
-  }
-  .cookie-notice-container .container {
-    font-size: 16px;
-  }
+	.footerWrap .footer {
+		padding: 20px 24px;
+	}
+
+	.footerWrap .footer .top {
+		display: flex;
+		align-items: center;
+		margin-bottom: 18px;
+	}
+
+	.footerWrap .footer .top .socialMedia {
+		margin-left: 50px;
+	}
+
+	.footerWrap .footer .top .socialMedia .externalLinks {
+		margin-right: 12px;
+	}
+
+	.footerWrap .footer .top .socialMedia .externalLinks svg {
+		width: 30px;
+		height: 30px;
+	}
+
+	.footerWrap .cookie-notice-container {
+		font-size: 16px;
+	}
+
+	.footerWrap .addToScreenTip .tipCont {
+		display: flex;
+		justify-content: center;
+	}
+
+	.footerWrap .addToScreenTip .tipCont .stepImg {
+		width: 20%;
+	}
+
+	.cookie-notice-container .container {
+		font-size: 16px;
+	}
 }
+
 @media only screen and (min-width: 1200px) {
-  .footerWrap .footer {
-    padding: 50px 24px 50px 24px;
-  }
-  .footerWrap .footer .top {
-    display: flex;
-    align-items: center;
-    margin-bottom: 18px;
-  }
-  .footerWrap .footer .top .socialMedia {
-    margin-left: 50px;
-  }
-  .footerWrap .footer .top .socialMedia .externalLinks {
-    margin-right: 12px;
-  }
-  .footerWrap .footer .top .socialMedia .externalLinks svg {
-    width: 30px;
-    height: 30px;
-  }
-  .footerWrap .cookie-notice-container {
-    font-size: 16px;
-  }
-  .footerWrap .addToScreenTip {
-    display: none;
-  }
-  .cookie-notice-container .container {
-    font-size: 16px;
-  }
+	.footerWrap .footer {
+		padding: 50px 24px 50px 24px;
+	}
+
+	.footerWrap .footer .top {
+		display: flex;
+		align-items: center;
+		margin-bottom: 18px;
+	}
+
+	.footerWrap .footer .top .socialMedia {
+		margin-left: 50px;
+	}
+
+	.footerWrap .footer .top .socialMedia .externalLinks {
+		margin-right: 12px;
+	}
+
+	.footerWrap .footer .top .socialMedia .externalLinks svg {
+		width: 30px;
+		height: 30px;
+	}
+
+	.footerWrap .cookie-notice-container {
+		font-size: 16px;
+	}
+
+	.footerWrap .addToScreenTip {
+		display: none;
+	}
+
+	.cookie-notice-container .container {
+		font-size: 16px;
+	}
 }
+
 .indexWrap .appDetCont {
-  display: flex;
+	display: flex;
 }
+
 .indexWrap .appDetCont .leftBox {
-  width: 70%;
-  padding-right: 60px;
+	width: 70%;
+	padding-right: 60px;
 }
+
 .indexWrap .appDetCont .leftBox .appCard {
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
 }
+
 .indexWrap .appDetCont .leftBox .appCard .appCardImg {
-  width: 100px;
-  height: 100px;
-  aspect-ratio: 1 / 1;
-  border-radius: 20px;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
-  flex-shrink: 0;
+	width: 100px;
+	height: 100px;
+	aspect-ratio: 1 / 1;
+	border-radius: 20px;
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+	flex-shrink: 0;
 }
+
 .indexWrap .appDetCont .leftBox .appCard .appCardInfo {
-  margin-left: 16px;
+	margin-left: 16px;
 }
+
 .indexWrap .appDetCont .leftBox .appCard .appCardInfo .appCardInfoName {
-  color: #1A1A1A;
-  font-family: 'Roboto', sans-serif;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 130%;
-  margin-bottom: 8px;
+	color: #1A1A1A;
+	font-family: 'Roboto', sans-serif;
+	font-size: 26px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 130%;
+	margin-bottom: 8px;
 }
+
 .indexWrap .appDetCont .leftBox .appCard .appCardInfo .appCardInfoScore {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
+
 .indexWrap .appDetCont .leftBox .appCard .appCardInfo .appCardInfoScore .scoreNum {
-  color: #666;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 137%;
+	color: #666;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 137%;
 }
+
 .indexWrap .appDetCont .leftBox .appCard .appCardInfo .appCardInfoScore svg {
-  margin-right: 4px;
+	margin-right: 4px;
 }
+
 .indexWrap .appDetCont .leftBox .appInfo {
-  margin: 12px 0;
+	margin: 12px 0;
 }
+
 .indexWrap .appDetCont .leftBox .appInfo .infoList {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+
 .indexWrap .appDetCont .leftBox .appInfo .infoList .itemInfo {
-  margin-bottom: 15px;
-  width: 100%;
-  display: flex;
-  align-items: center;
+	margin-bottom: 15px;
+	width: 100%;
+	display: flex;
+	align-items: center;
 }
+
 .indexWrap .appDetCont .leftBox .appInfo .infoList .itemInfo .itemInfoleft {
-  width: 30%;
-  flex-shrink: 0;
-  color: #666;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  margin-right: 10px;
+	width: 30%;
+	flex-shrink: 0;
+	color: #666;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+	margin-right: 10px;
 }
+
 .indexWrap .appDetCont .leftBox .appInfo .infoList .itemInfo .itemInforight {
-  flex: 1;
-  color: #1A1A1A;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 22px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  word-break: break-all;
+	flex: 1;
+	color: #1A1A1A;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 22px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	word-break: break-all;
 }
+
 .indexWrap .appDetCont .leftBox .appInfo .infoList .itemInfo .safety {
-  color: #0186FF;
+	color: #0186FF;
 }
+
 .indexWrap .appDetCont .leftBox .authorInformation {
-  margin-top: 12px;
-  display: flex;
-  align-items: center;
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
 }
+
 .indexWrap .appDetCont .leftBox .authorInformation .authorImg {
-  width: 36px;
-  height: 36px;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
 }
+
 .indexWrap .appDetCont .leftBox .authorInformation .authorInfo {
-  display: flex;
+	display: flex;
 }
+
 .indexWrap .appDetCont .leftBox .authorInformation .authorInfo .authorName {
-  color: #666;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
-  margin-right: 16px;
+	color: #666;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 20px;
+	margin-right: 16px;
 }
+
 .indexWrap .appDetCont .leftBox .authorInformation .authorInfo .update {
-  color: #666;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
+	color: #666;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
 }
+
 .indexWrap .appDetCont .leftBox .flag {
-  color: #0186FF;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 22px;
-  margin-bottom: 16px;
+	color: #0186FF;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 22px;
+	margin-bottom: 16px;
 }
+
 .indexWrap .appDetCont .leftBox .flag .moreBox .more {
-  margin-top: 12px;
-  display: flex;
-  align-items: center;
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
 }
+
 .indexWrap .appDetCont .leftBox .flag .moreBox .more svg {
-  margin-left: 6px;
+	margin-left: 6px;
 }
+
 .indexWrap .appDetCont .leftBox .flag .lessBox .less {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
+
 .indexWrap .appDetCont .leftBox .flag .lessBox .less svg {
-  margin-left: 6px;
+	margin-left: 6px;
 }
+
 .indexWrap .appDetCont .leftBox .btnGroup {
-  width: 100%;
-  padding: 16px 0 40px 0;
+	width: 100%;
+	padding: 16px 0 40px 0;
 }
+
 .indexWrap .appDetCont .leftBox .btnGroup .downloadBox {
-  display: flex;
+	display: flex;
 }
+
 .indexWrap .appDetCont .leftBox .btnGroup .downloadBox .downloadBtn {
-  width: calc((100% - 12px) / 2);
+	width: calc((100% - 12px) / 2);
 }
+
 .indexWrap .appDetCont .leftBox .btnGroup .downloadBox .downloadBtn .download {
-  width: 100%;
-  position: relative;
-  height: 60px;
-  border-radius: 30px;
-  background: #0186FF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #FFF;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  animation: Breath 1s linear infinite;
-  -webkit-animation: Breath 1s linear infinite;
+	width: 100%;
+	position: relative;
+	height: 60px;
+	border-radius: 30px;
+	background: #0186FF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	animation: Breath 1s linear infinite;
+	-webkit-animation: Breath 1s linear infinite;
 }
+
 .indexWrap .appDetCont .leftBox .btnGroup .downloadBox .downloadBtn .download svg {
-  margin-right: 8px;
+	margin-right: 8px;
 }
+
 .indexWrap .appDetCont .leftBox .btnGroup .downloadBox .downloadBtn .download .safe {
-  padding: 5px 8px;
-  border-radius: 12px 12px 12px 0px;
-  background: #60D86C;
-  position: absolute;
-  right: 0px;
-  top: -20.539px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #FFF;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+	padding: 5px 8px;
+	border-radius: 12px 12px 12px 0px;
+	background: #60D86C;
+	position: absolute;
+	right: 0px;
+	top: -20.539px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
 }
+
 .indexWrap .appDetCont .leftBox .btnGroup .downloadBox .downloadBtn .watchAD {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 12px;
 }
+
 .indexWrap .appDetCont .leftBox .btnGroup .downloadBox .downloadBtn .watchAD svg {
-  width: 20px;
-  height: 20px;
-  margin-right: 6px;
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
 }
+
 .indexWrap .appDetCont .leftBox .btnGroup .downloadBox .downloadBtn .watchAD .text {
-  color: #999;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
+	color: #999;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 20px;
 }
+
 .indexWrap .appDetCont .leftBox .btnGroup .downloadBox .versionHistory {
-  position: relative;
-  width: calc((100% - 12px) / 2);
-  height: 60px;
-  border-radius: 30px;
-  background: #F3F6F9;
-  margin-left: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #016BCC;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+	position: relative;
+	width: calc((100% - 12px) / 2);
+	height: 60px;
+	border-radius: 30px;
+	background: #F3F6F9;
+	margin-left: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #016BCC;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
 }
+
 .indexWrap .appDetCont .leftBox .btnGroup .downloadBox .versionHistory svg {
-  margin-right: 8px;
+	margin-right: 8px;
 }
+
 .indexWrap .appDetCont .leftBox .btnGroup .storeEntrance {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
+
 .indexWrap .appDetCont .leftBox .btnGroup .storeEntrance .googlePlay {
-  position: relative;
-  width: calc((100% - 12px) / 2);
-  height: 64px;
-  border-radius: 30px;
-  background: #01875F;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #FFF;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+	position: relative;
+	width: calc((100% - 12px) / 2);
+	height: 64px;
+	border-radius: 30px;
+	background: #01875F;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
 }
+
 .indexWrap .appDetCont .leftBox .btnGroup .storeEntrance .googlePlay svg {
-  margin-right: 8px;
+	margin-right: 8px;
 }
+
 .indexWrap .appDetCont .leftBox .btnGroup .storeEntrance .AppStore {
-  position: relative;
-  width: calc((100% - 12px) / 2);
-  height: 64px;
-  border-radius: 30px;
-  margin-left: 12px;
-  background: #313131;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #FFF;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+	position: relative;
+	width: calc((100% - 12px) / 2);
+	height: 64px;
+	border-radius: 30px;
+	margin-left: 12px;
+	background: #313131;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
 }
+
 .indexWrap .appDetCont .leftBox .btnGroup .storeEntrance .AppStore svg {
-  margin-right: 8px;
+	margin-right: 8px;
 }
+
 .indexWrap .appDetCont .leftBox .btnGroup .noclick {
-  background: #CCC !important;
+	background: #CCC !important;
 }
+
 .indexWrap .appDetCont .leftBox .topFreeModule {
-  margin-bottom: 40px;
+	margin-bottom: 40px;
 }
+
 .indexWrap .appDetCont .leftBox .topFreeModule .topAppList {
-  display: grid;
-  grid-gap: 10px 10px;
-  grid-template-columns: repeat(6, calc((100% - 50px) / 6));
+	display: grid;
+	grid-gap: 10px 10px;
+	grid-template-columns: repeat(6, calc((100% - 50px) / 6));
 }
+
 .indexWrap .appDetCont .leftBox .topFreeModule .topAppList .itemAppCont {
-  padding: 12px;
-  border-radius: 12px;
-  position: relative;
+	padding: 12px;
+	border-radius: 12px;
+	position: relative;
 }
+
 .indexWrap .appDetCont .leftBox .topFreeModule .topAppList .itemAppCont .ItemAppLogo {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  flex-shrink: 0;
-  border-radius: 18%;
-  margin-bottom: 10px;
-  box-shadow: 0px 1px 2px 0px rgba(37, 39, 44, 0.1), 0px 1px 3px 1px rgba(37, 39, 44, 0.08);
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1 / 1;
+	flex-shrink: 0;
+	border-radius: 18%;
+	margin-bottom: 10px;
+	box-shadow: 0px 1px 2px 0px rgba(37, 39, 44, 0.1), 0px 1px 3px 1px rgba(37, 39, 44, 0.08);
 }
+
 .indexWrap .appDetCont .leftBox .topFreeModule .topAppList .itemAppCont .itemAppDesc .itemAppName {
-  color: #1A1A1A;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 137%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  word-break: break-all;
+	color: #1A1A1A;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 137%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	word-break: break-all;
 }
+
 .indexWrap .appDetCont .leftBox .topFreeModule .topAppList .itemAppCont .itemAppDesc .itemAppCate {
-  color: #666;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 137%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  word-break: break-all;
-  margin: 4px 0;
+	color: #666;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 137%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	word-break: break-all;
+	margin: 4px 0;
 }
+
 .indexWrap .appDetCont .leftBox .topFreeModule .topAppList .itemAppCont .itemAppDesc .itemAppStart {
-  display: flex;
-  align-items: center;
-  color: #666;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 137%;
+	display: flex;
+	align-items: center;
+	color: #666;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 137%;
 }
+
 .indexWrap .appDetCont .leftBox .topFreeModule .topAppList .itemAppCont .itemAppDesc .itemAppStart svg {
-  margin-left: 4px;
+	margin-left: 4px;
 }
+
 .indexWrap .appDetCont .rightBox {
-  width: 30%;
+	width: 30%;
 }
+
 @keyframes Breath {
-  0% {
-    transform: scale(0.92);
-  }
-  50% {
-    transform: scale(100%);
-  }
-  100% {
-    transform: scale(0.92);
-  }
+	0% {
+		transform: scale(0.92);
+	}
+	50% {
+		transform: scale(100%);
+	}
+	100% {
+		transform: scale(0.92);
+	}
 }
+
 @media only screen and (min-width: 768px) {
-  .indexWrap .appDetCont .leftBox .topFreeModule .topAppList .itemAppCont:hover {
-    background: #F5F5F5;
-  }
-  .indexWrap .appDetCont .leftBox .btnGroup .downloadBox .download:hover {
-    background: #016BCC;
-  }
-  .indexWrap .appDetCont .leftBox .btnGroup .downloadBox .versionHistory:hover {
-    background: #E0E5E8;
-  }
-  .indexWrap .appDetCont .leftBox .btnGroup .storeEntrance .googlePlay:hover {
-    background: #056449;
-  }
-  .indexWrap .appDetCont .leftBox .btnGroup .storeEntrance .AppStore:hover {
-    background: #000;
-  }
+	.indexWrap .appDetCont .leftBox .topFreeModule .topAppList .itemAppCont:hover {
+		background: #F5F5F5;
+	}
+
+	.indexWrap .appDetCont .leftBox .btnGroup .downloadBox .download:hover {
+		background: #016BCC;
+	}
+
+	.indexWrap .appDetCont .leftBox .btnGroup .downloadBox .versionHistory:hover {
+		background: #E0E5E8;
+	}
+
+	.indexWrap .appDetCont .leftBox .btnGroup .storeEntrance .googlePlay:hover {
+		background: #056449;
+	}
+
+	.indexWrap .appDetCont .leftBox .btnGroup .storeEntrance .AppStore:hover {
+		background: #000;
+	}
 }
+
 @media only screen and (max-width: 767px) {
-  .indexWrap .appDetCont {
-    flex-direction: column;
-  }
-  .indexWrap .appDetCont .leftBox {
-    width: 100%;
-    padding: 0;
-  }
-  .indexWrap .appDetCont .leftBox .appCard .appCardImg {
-    width: 80px;
-    height: 80px;
-    border-radius: 14px;
-    box-shadow: 0px 1px 2px 0px rgba(37, 39, 44, 0.1), 0px 1px 3px 1px rgba(37, 39, 44, 0.08);
-  }
-  .indexWrap .appDetCont .leftBox .appCard .appCardInfo {
-    margin-left: 12px;
-  }
-  .indexWrap .appDetCont .leftBox .appCard .appCardInfo .appCardInfoName {
-    font-size: 20px;
-    line-height: 137%;
-  }
-  .indexWrap .appDetCont .leftBox .authorInformation .authorInfo {
-    flex-direction: column;
-  }
-  .indexWrap .appDetCont .leftBox .btnGroup {
-    padding: 16px 0 28px 0;
-  }
-  .indexWrap .appDetCont .leftBox .btnGroup .downloadBox {
-    flex-direction: column;
-  }
-  .indexWrap .appDetCont .leftBox .btnGroup .downloadBox .downloadBtn {
-    width: 100%;
-  }
-  .indexWrap .appDetCont .leftBox .btnGroup .downloadBox .downloadBtn .download,
-  .indexWrap .appDetCont .leftBox .btnGroup .downloadBox .downloadBtn .versionHistory {
-    height: 50px;
-    font-size: 14px;
-    margin-left: 0px;
-  }
-  .indexWrap .appDetCont .leftBox .btnGroup .downloadBox .download,
-  .indexWrap .appDetCont .leftBox .btnGroup .downloadBox .versionHistory {
-    width: 100%;
-    height: 50px;
-    font-size: 14px;
-    margin-left: 0px;
-  }
-  .indexWrap .appDetCont .leftBox .btnGroup .downloadBox .versionHistory {
-    margin-top: 12px;
-  }
-  .indexWrap .appDetCont .leftBox .btnGroup .storeEntrance {
-    flex-direction: column;
-  }
-  .indexWrap .appDetCont .leftBox .btnGroup .storeEntrance .googlePlay,
-  .indexWrap .appDetCont .leftBox .btnGroup .storeEntrance .AppStore {
-    width: 100%;
-    height: 50px;
-    font-size: 14px;
-    margin-left: 0px;
-  }
-  .indexWrap .appDetCont .leftBox .btnGroup .storeEntrance .AppStore {
-    margin-top: 12px;
-  }
-  .indexWrap .appDetCont .leftBox .topFreeModule {
-    margin-bottom: 28px;
-  }
-  .indexWrap .appDetCont .leftBox .topFreeModule .topAppList {
-    padding: 0 6px;
-    grid-gap: 20px 20px;
-    grid-template-columns: repeat(3, calc((100% - 40px) / 3));
-  }
-  .indexWrap .appDetCont .leftBox .topFreeModule .topAppList .itemAppCont {
-    padding: 0;
-  }
-  .indexWrap .appDetCont .rightBox {
-    width: 100%;
-  }
+	.indexWrap .appDetCont {
+		flex-direction: column;
+	}
+
+	.indexWrap .appDetCont .leftBox {
+		width: 100%;
+		padding: 0;
+	}
+
+	.indexWrap .appDetCont .leftBox .appCard .appCardImg {
+		width: 80px;
+		height: 80px;
+		border-radius: 14px;
+		box-shadow: 0px 1px 2px 0px rgba(37, 39, 44, 0.1), 0px 1px 3px 1px rgba(37, 39, 44, 0.08);
+	}
+
+	.indexWrap .appDetCont .leftBox .appCard .appCardInfo {
+		margin-left: 12px;
+	}
+
+	.indexWrap .appDetCont .leftBox .appCard .appCardInfo .appCardInfoName {
+		font-size: 20px;
+		line-height: 137%;
+	}
+
+	.indexWrap .appDetCont .leftBox .authorInformation .authorInfo {
+		flex-direction: column;
+	}
+
+	.indexWrap .appDetCont .leftBox .btnGroup {
+		padding: 16px 0 28px 0;
+	}
+
+	.indexWrap .appDetCont .leftBox .btnGroup .downloadBox {
+		flex-direction: column;
+	}
+
+	.indexWrap .appDetCont .leftBox .btnGroup .downloadBox .downloadBtn {
+		width: 100%;
+	}
+
+	.indexWrap .appDetCont .leftBox .btnGroup .downloadBox .downloadBtn .download,
+	.indexWrap .appDetCont .leftBox .btnGroup .downloadBox .downloadBtn .versionHistory {
+		height: 50px;
+		font-size: 14px;
+		margin-left: 0px;
+	}
+
+	.indexWrap .appDetCont .leftBox .btnGroup .downloadBox .download,
+	.indexWrap .appDetCont .leftBox .btnGroup .downloadBox .versionHistory {
+		width: 100%;
+		height: 50px;
+		font-size: 14px;
+		margin-left: 0px;
+	}
+
+	.indexWrap .appDetCont .leftBox .btnGroup .downloadBox .versionHistory {
+		margin-top: 12px;
+	}
+
+	.indexWrap .appDetCont .leftBox .btnGroup .storeEntrance {
+		flex-direction: column;
+	}
+
+	.indexWrap .appDetCont .leftBox .btnGroup .storeEntrance .googlePlay,
+	.indexWrap .appDetCont .leftBox .btnGroup .storeEntrance .AppStore {
+		width: 100%;
+		height: 50px;
+		font-size: 14px;
+		margin-left: 0px;
+	}
+
+	.indexWrap .appDetCont .leftBox .btnGroup .storeEntrance .AppStore {
+		margin-top: 12px;
+	}
+
+	.indexWrap .appDetCont .leftBox .topFreeModule {
+		margin-bottom: 28px;
+	}
+
+	.indexWrap .appDetCont .leftBox .topFreeModule .topAppList {
+		padding: 0 6px;
+		grid-gap: 20px 20px;
+		grid-template-columns: repeat(3, calc((100% - 40px) / 3));
+	}
+
+	.indexWrap .appDetCont .leftBox .topFreeModule .topAppList .itemAppCont {
+		padding: 0;
+	}
+
+	.indexWrap .appDetCont .rightBox {
+		width: 100%;
+	}
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .indexWrap .appDetCont .leftBox .topFreeModule {
-    margin-bottom: 28px;
-  }
-  .indexWrap .appDetCont .leftBox .topFreeModule .topAppList .itemAppCont {
-    padding: 0;
-  }
+	.indexWrap .appDetCont .leftBox .topFreeModule {
+		margin-bottom: 28px;
+	}
+
+	.indexWrap .appDetCont .leftBox .topFreeModule .topAppList .itemAppCont {
+		padding: 0;
+	}
 }
